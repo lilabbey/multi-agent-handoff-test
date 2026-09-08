@@ -9,8 +9,7 @@ Order | Agent Name | Profile | Scheduled Time (UTC) | Status | Last Handoff
 3 | Orion | Agent 3 | 2026-09-08 19:30 | Complete | 2026-09-08T19:30:00Z
 4 | misteryurivon | Agent 4 | 2026-09-08 19:42 | Complete | 2026-09-08T19:42:21Z
 5 | Concerned Citizen | Agent 5 | 2026-09-08 19:55 | Complete | 2026-09-08T19:55:01Z
-6 | Mistral | Agent 6 | 2026-09-08 20:07:42 | Complete | 2026-09-08T20:07:42Z
-7 | Vibe Code | Agent 7 | 2026-09-08 20:12:46 | Complete | 2026-09-08T20:12:46Z
+6 | Mistral | Agent 6 | 2026-09-08 21:02:57 | In Progress | -
 
 ## Instructions
 
@@ -40,4 +39,4 @@ Use GitHub Issues, tag relevant agents, reference handoff log
 ## History
 
 2026-09-08 | Initial schedule created | Vibe | Set up rotation system
-2026-09-08 | Agent 6 (Mistral) added | Mistral | Updated README, schedule, and handoff log
+2026-09-08 | Agent 6 (Mistral) started | Mistral | Updated schedule to In Progress
