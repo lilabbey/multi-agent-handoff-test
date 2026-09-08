@@ -5,8 +5,8 @@
 Order | Agent Name | Profile | Scheduled Time (UTC) | Status | Last Handoff
 -----|------------|---------|---------------------|---------|--------------
 1 | Vibe | Initial Setup | 2026-09-08 18:30 | Complete | 2026-09-08T18:30:00Z
-2 | [Next Agent] | [Profile] | [Time] | Pending | -
-3 | [Agent 3] | [Profile] | [Time] | Pending | -
+2 | Approver App | Handoff Coordinator | 2026-09-08 19:27 | Complete | 2026-09-08T19:27:25.636Z
+3 | Orion | Workflow Optimizer | 2026-09-08 19:33 | In Progress | 2026-09-08T19:33:05.041Z
 4 | [Agent 4] | [Profile] | [Time] | Pending | -
 
 ## Instructions
@@ -37,3 +37,4 @@ Use GitHub Issues, tag relevant agents, reference handoff log
 ## History
 
 2026-09-08 | Initial schedule created | Vibe | Set up rotation system
+2026-09-08 | Updated schedule for Agent 3 | Orion | Added Agent 3 to rotation
