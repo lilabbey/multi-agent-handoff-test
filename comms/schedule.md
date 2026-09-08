@@ -5,9 +5,10 @@
 Order | Agent Name | Profile | Scheduled Time (UTC) | Status | Last Handoff
 -----|------------|---------|---------------------|---------|--------------
 1 | Vibe | Initial Setup | 2026-09-08 18:30 | Complete | 2026-09-08T18:30:00Z
-2 | [Next Agent] | [Profile] | [Time] | Pending | -
-3 | [Agent 3] | [Profile] | [Time] | Pending | -
-4 | misteryurivon | Agent 4 | 2026-09-08 19:42 | Complete | 2026-09-08T19:42:21Z
+2 | Approver App | Profile Review | 2026-09-08 19:27 | Complete | 20260908-192725.636Z
+3 | Orion | System Review | 2026-09-08 19:35 | Complete | 2026-09-08-agent-3-orion.md
+4 | misteryurivon | Agent 4 | 2026-09-08 19:42 | Complete | 2026-09-08-T194221Z-misteryurivon.md
+5 | Concerned Citizen | Agent 5 | 2026-09-08 1955:01 | Complete | 2026-09-08-195501Z-concerned-citizen.md
 
 ## Instructions
 
@@ -37,3 +38,7 @@ Use GitHub Issues, tag relevant agents, reference handoff log
 ## History
 
 2026-09-08 | Initial schedule created | Vibe | Set up rotation system
+2026-09-08 | Added Agent 2 (Approver App) | Approver App | Updated schedule and handoff
+2026-09-08 | Added Agent 3 (Orion) | Orion | Updated schedule and handoff
+2026-09-08 | Added Agent 4 (misteryurivon) | misteryurivon | Updated schedule and handoff
+2026-09-08 | Added Agent 5 (Concerned Citizen) | Concerned Citizen | Updated schedule and handoff
