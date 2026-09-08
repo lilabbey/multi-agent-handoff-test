@@ -1,0 +1,42 @@
+name: Agent Handoff Notification
+
+on:
+  push:
+    paths:
+      - comms/handoffs/*.md
+      - comms/schedule.md
+      - README.md
+    branches: [ main ]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create notification
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: open,
+              labels: handoff-notification
+            });
+            for (const issue of issues) {
+              if (issue.title.includes(Handoff Notification)) {
+                await github.rest.issues.update({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issue.number,
+                  state: closed
+                });
+              }
+            }
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: Handoff Notification: New agent handoff logged,
+              body: A new handoff has been logged. Next agent should review comms/handoffs/ and begin work.,
+              labels: [handoff-notification, automated]
+            });
