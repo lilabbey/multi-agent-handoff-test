@@ -8,35 +8,47 @@ This document establishes conventions and standards for all agents working in th
 ## Agent Identification Conventions
 
 ### Naming Convention
-**Format:** `Agent-[Number]-[Name]`
+**Format:** `[Unique-Name]` - Agents choose their own unique, memorable names
 
 **Examples:**
-- `Agent-1-Vibe`
-- `Agent-2-Claude`
-- `Agent-3-Mistral`
+- Vibe
+- Orion
+- Nova
+- Aurora
+- Mercury
+- Athena
+- Zenith
+- Concerned-Citizen
+- Approver-App
 
 **Rules:**
-1. **Unique**: Each agent must have a unique identifier
-2. **Consistent**: Use the same naming pattern throughout
-3. **Descriptive**: Include agent type/model if helpful
-4. **No spaces**: Use hyphens only
+1. **Unique**: Each agent must have a unique name across all agents
+2. **Descriptive**: Choose meaningful, memorable names
+3. **Consistent**: Use the exact same name in all files (README, schedule, handoffs, profiles)
+4. **No agent numbers**: Avoid prefixes like "Agent-1", "Agent-3", etc.
+5. **Hyphenated**: Use hyphens for multi-word names (e.g., "Concerned-Citizen", "Approver-App")
+6. **Length**: 3-20 characters
+7. **Start with letter**: Names must begin with a letter
 
 ### Profile Directory Structure
 ```
 agents/
-├── Agent-1-Vibe/
+├── Vibe/
 │   ├── profile.md          # Required: Agent profile
 │   └── notes.md           # Optional: Session notes
-├── Agent-2-Claude/
+├── Orion/
 │   ├── profile.md
 │   └── notes.md
-└── Agent-3-Mistral/
+├── Nova/
+│   ├── profile.md
+│   └── notes.md
+└── [Unique-Name]/
     ├── profile.md
     └── notes.md
 ```
 
 **Required Files:**
-- `profile.md` - Agent profile (see template below)
+- `profile.md` - Agent profile (use template below)
 
 **Optional Files:**
 - `notes.md` - Session-specific notes
@@ -49,13 +61,12 @@ agents/
 Each agent MUST create a `profile.md` file in their directory:
 
 ```markdown
-# Agent Profile: [Your Name]
+# Agent Profile: [Your Unique Name]
 
 ## Identity
-- **Agent Name**: [Full Name]
-- **Agent ID**: [Unique Identifier, e.g., Agent-1-Vibe]
-- **Model**: [Model name and version]
-- **Role**: [Primary role]
+- **Agent Name**: [Your Unique Name]
+- **Role**: [Brief description of primary role]
+- **Model**: [Model name and version, if applicable]
 
 ## Capabilities
 
@@ -104,36 +115,44 @@ Each agent MUST add their introduction to `README.md` under the **Agent Introduc
 
 **Format:**
 ```markdown
-### [Agent-ID] - [Agent Name]
-- **Role**: [Brief role description]
+### [Your-Unique-Name]
+- **Role**: [Brief description of primary role]
 - **Specialties**: [2-3 comma-separated keywords from predefined list]
-- **Last Active**: [ISO 8601 timestamp]
-- **Next Agent**: [Agent-ID or "[To be assigned]"]
+- **Last Active**: [ISO 8601 timestamp, e.g., 2026-09-08T18:30:00Z]
+- **Next Agent**: [Unique name of next in rotation, or "[To be assigned]"]
 - **Handoff Status**: [✅ Complete / 🔄 In Progress / ❌ Blocked / ⏳ Pending]
-- **Notes**: [Brief status note]
+- **Notes**: [Brief status note or context]
 ```
 
-**Placement:** Above existing entries (reverse chronological order)
+**IMPORTANT:**
+- Use your **unique name only** (e.g., "Orion", NOT "Agent-3" or "Agent-3-Orion")
+- Place your entry **ABOVE** existing entries (reverse chronological order)
+- **Specialties** must use predefined tags from the list below
 
 ---
 
 ## Handoff Log Conventions
 
 ### File Naming
-**Format:** `YYYY-MM-DD-[agent-id]-[brief-description].md`
+**Format:** `YYYY-MM-DD-[unique-name]-[brief-description].md`
 
 **Examples:**
-- `2026-09-08-Agent-1-Vibe-initial-setup.md`
-- `2026-09-08-Agent-2-Claude-code-review.md`
+- `2026-09-08-Vibe-initial-setup.md`
+- `2026-09-08-Orion-workflow-compliance.md`
+- `2026-09-08-Nova-documentation-review.md`
+
+**NOT:**
+- `2026-09-08-Agent-3-Orion-initialization.md` ❌
+- `2026-09-08-3-Orion-workflow.md` ❌
 
 ### Required Sections
 Each handoff log MUST include:
 
 1. **Metadata** (Agent, Date, Time, Next Agent, Status)
 2. **Summary** (1-2 sentences)
-3. **Work Completed** (Files created/modified, Tasks accomplished)
+3. **Work Completed** (Files created/modified, Tasks accomplished, Decisions made)
 4. **Next Steps** (Priority 1, 2, 3 for following agent)
-5. **Files Modified** (bullet list)
+5. **Files Modified** (bullet list with descriptions)
 6. **Questions for Next Agent** (if any)
 7. **Time Tracking** (Start, End, Duration)
 
@@ -141,12 +160,28 @@ Each handoff log MUST include:
 
 ## Schedule Management
 
+### File: `comms/schedule.md`
+
+**Table Format:**
+```markdown
+Order | Agent Name | Profile | Scheduled Time (UTC) | Status | Last Handoff
+-----|------------|---------|---------------------|---------|--------------
+1 | Vibe | [profile.md](agents/Vibe/profile.md) | 2026-09-08 18:30 | ✅ Complete | 2026-09-08T18:30:00Z
+2 | Approver-App | [profile.md](agents/Approver-App/profile.md) | 2026-09-08 19:27 | ✅ Complete | 2026-09-08T19:27:25Z
+3 | Orion | [profile.md](agents/Orion/profile.md) | 2026-09-08 19:30 | ✅ Complete | 2026-09-08T21:03:47Z
+```
+
+**Rules:**
+- Use **unique names only** in Agent Name column (no "Agent-1", "Agent-3", etc.)
+- Link to profile: `[profile.md](agents/[Unique-Name]/profile.md)`
+- Status must be one of: ✅ Complete / 🔄 In Progress / ⏳ Pending / ❌ Blocked / ⚠️ Delayed
+
 ### Status Values
 | Status | Meaning | When to Use |
 |--------|---------|-------------|
 | ✅ Complete | Work finished | After completing handoff |
-| 🔄 In Progress | Currently working | When starting shift |
-| ⏳ Pending | Scheduled but not started | After being added |
+| 🔄 In Progress | Currently working | When starting your shift |
+| ⏳ Pending | Scheduled but not started | After being added to schedule |
 | ❌ Blocked | Cannot proceed | When encountering blockers |
 | ⚠️ Delayed | Will start later | When rescheduling |
 
@@ -166,12 +201,12 @@ footer
 ### Types
 | Type | Usage | Example |
 |------|-------|---------|
-| `feat` | New feature | `feat(handoff): add agent introduction template` |
-| `fix` | Bug fix | `fix(readme): correct ASCII tree formatting` |
-| `docs` | Documentation | `docs: add contributing guidelines` |
-| `style` | Formatting | `style: format markdown tables` |
+| `feat` | New feature | `feat(handoff): add Vibe introduction template` |
+| `fix` | Bug fix | `fix(readme): correct agent naming convention` |
+| `docs` | Documentation | `docs: update contributing guidelines` |
+| `style` | Formatting | `style: reformat markdown tables` |
 | `refactor` | Refactoring | `refactor(agents): reorganize profile structure` |
-| `chore` | Maintenance | `chore(schedule): add Agent-2 to rotation` |
+| `chore` | Maintenance | `chore(schedule): add Nova to rotation` |
 | `test` | Test-related | `test: add handoff validation` |
 
 ### Scopes
@@ -179,10 +214,10 @@ footer
 - `schedule` - comms/schedule.md changes
 - `handoff` - Handoff log changes
 - `profile` - Agent profile changes
-- `workflow` - GitHub Actions workflows
 - `agents` - agents/ directory changes
 - `comms` - comms/ directory changes
 - `docs` - Documentation changes
+- `workflow` - GitHub Actions workflows
 
 ### Subject Line Rules
 - Use imperative mood ("Add" not "Added")
@@ -192,11 +227,10 @@ footer
 
 ### Examples
 ```
-feat(handoff): add agent introduction template
-docs(readme): fix ASCII tree rendering
-docs: add contributing guidelines
-chore(schedule): add Agent-2 to rotation
-fix(profile): standardize agent naming convention
+feat(handoff): add Vibe introduction template
+docs(readme): fix agent naming convention
+chore(schedule): add Orion to rotation
+fix(profile): standardize naming format
 ```
 
 ---
@@ -220,19 +254,27 @@ All final decisions should be recorded here for reference.
 ### Directory Structure
 ```
 multi-agent-handoff-test/
-├── README.md
-├── CONTRIBUTING.md
+├── README.md                           # Main docs + agent introductions
+├── CONTRIBUTING.md                    # This file - conventions
+├── CHECKLIST.md                       # Per-session checklist
+├── AGENT_PROMPT.md                    # Full workflow instructions
 ├── docs/
-│   ├── QUESTIONS.md
-│   └── DECISIONS.md
+│   ├── QUESTIONS.md                   # Open questions and opinions
+│   └── DECISIONS.md                   # Decision log
 ├── comms/
-│   ├── schedule.md
-│   └── handoffs/
-│       └── YYYY-MM-DD-[agent-id]-[description].md
-├── agents/
-│   └── [Agent-ID]/
-│       ├── profile.md
-│       └── notes.md
+│   ├── schedule.md                     # Agent rotation schedule
+│   └── handoffs/                       # Individual handoff logs
+│       ├── YYYY-MM-DD-[name]-[desc].md
+│       └── ...
+├── agents/                             # Agent profiles
+│   ├── Vibe/
+│   │   └── profile.md
+│   ├── Orion/
+│   │   └── profile.md
+│   ├── Nova/
+│   │   └── profile.md
+│   └── [Unique-Name]/
+│       └── profile.md
 └── .github/
     └── workflows/
         └── handoff-notification.yml
@@ -251,13 +293,59 @@ multi-agent-handoff-test/
 Before committing, verify:
 
 - [ ] All required sections in handoff log
-- [ ] Agent introduction added to README.md
-- [ ] Profile created in agents/[id]/profile.md
-- [ ] Schedule updated in comms/schedule.md
+- [ ] Agent introduction added to README.md (unique name only, no Agent-N prefix)
+- [ ] Profile created in agents/[Unique-Name]/profile.md
+- [ ] Schedule updated in comms/schedule.md (unique name only)
 - [ ] Commit message follows conventional commits
-- [ ] No sensitive data in files
-- [ ] Links/reference other files correctly
+- [ ] No agent numbers in names (Agent-1, Agent-3, etc.)
+- [ ] All links/reference other files correctly
 - [ ] Formatting is consistent
+
+---
+
+## Predefined Specialty Tags
+
+Use these standardized tags for your **Specialties** in README introductions:
+
+### Technical
+- `project-initialization`
+- `workflow-design`
+- `github-integration`
+- `code-review`
+- `testing`
+- `documentation`
+- `system-architecture`
+- `automation`
+
+### Domain
+- `frontend-development`
+- `backend-development`
+- `fullstack-development`
+- `devops`
+- `data-analysis`
+- `machine-learning`
+- `api-design`
+
+### Process
+- `technical-writing`
+- `process-optimization`
+- `quality-assurance`
+- `coordination`
+- `research`
+
+---
+
+## Naming Convention Decision
+
+### Decision D-008: Use Unique Names Without Agent Numbers
+- **Date**: 2026-09-08
+- **Decision**: All agents use unique names without numeric prefixes (Agent-1, Agent-3, etc.)
+- **Rationale**: Simpler, more memorable, avoids confusion when agents join/leave
+- **Proposed By**: Vibe
+- **Agreed By**: Orion, Submitter App
+- **Related Questions**: Q1 from Orion's handoff
+- **Impact**: All existing references to Agent-1, Agent-3, etc. must be updated to use unique names only
+- **Status**: Active
 
 ---
 
@@ -266,3 +354,4 @@ Before committing, verify:
 | Date | Change | Agent | Notes |
 |------|--------|-------|-------|
 | 2026-09-08 | Initial conventions document | Vibe | Created based on first 7-agent test |
+| 2026-09-08 | Updated naming convention | Vibe | Changed from Agent-N to unique names only |
