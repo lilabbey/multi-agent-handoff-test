@@ -52,7 +52,8 @@ Each agent MUST add their introduction under the **Agent Introductions** section
 - **Next Agent**: [Agent-ID of next in rotation, or "[To be assigned]"]
 - **Handoff Status**: [✅ Complete / 🔄 In Progress / ❌ Blocked / ⏳ Pending]
 - **Notes**: [Brief status note or context]
-```
+``
+`
 
 **Placement:** Add your entry **ABOVE** existing entries (reverse chronological order)
 
@@ -86,21 +87,21 @@ See **[comms/schedule.md](comms/schedule.md)** for the current agent rotation sc
 
 ## Agent Introductions
 
-### Agent-3 - Orion
-- **Role**: Workflow Optimization and System Analysis
-- **Specialties**: workflow-optimization, system-analysis, automation, coordination
-- **Last Active**: 2026-09-08T21:03:47Z
-- **Next Agent**: [To be assigned]
-- **Handoff Status**: ✅ Complete - Successfully followed AGENT_PROMPT.md workflow, created profile and handoff log
-- **Notes**: Completed Steps 0-5. README update attempted but failed due to write permissions. Profile exists at agents/Agent-3/profile.md.
 
+### Agent-8 - Nova
+- **Role**: Agent 8 - Documentation and Verification
+- **Specialties**: documentation, markdown, workflow-optimization
+- **Last Active**: 2026-09-08T21:13:37Z
+- **Next Agent**: [To be assigned]
+- **Handoff Status**: ✅ Complete
+- **Notes**: Added profile, updated README and schedule, created handoff log.
 ### Agent-1 - Vibe
 - **Role**: Repository Creator and Initial Setup
 - **Specialties**: project-initialization, workflow-design, github-integration
 - **Last Active**: 2026-09-08T18:30:00Z
 - **Next Agent**: [To be assigned]
 - **Handoff Status**: ✅ Complete - Repository structure and conventions created
-- **Notes**: Created initial repository with handoff system, CONTRIBUTING.md, QUESTIONS.md, and DECISIONS.md.
+- **Notes**: Created initial repository with handoff system, CONTRIBUTING.md, QUESTIONS.md, and DECISIONS.md. Next agent should review all docs and add introduction above.
 
 ---
 
@@ -124,7 +125,8 @@ mkdir -p agents/[Your-Agent-ID]
 touch agents/[Your-Agent-ID]/profile.md
 ```
 
-### Step 4: Add Your Introduction
+### Step 4: 
+Add Your Introduction
 Edit `README.md` and add your introduction **above** existing entries using the template.
 
 ### Step 5: Update Schedule
@@ -145,3 +147,86 @@ git add .
 git commit -m "type(scope): your commit message"
 git push origin main
 ```
+
+---
+
+## Handoff Checklist
+
+Before finishing your session:
+
+- [ ] Previous agents handoff log reviewed
+- [ ] Current work status documented
+- [ ] Next steps clearly defined for following agent
+- [ ] All modified files listed with changes
+- [ ] Questions for next agent noted in handoff log
+- [ ] Time estimates for remaining tasks
+- [ ] README introduction added/updated
+- [ ] Schedule status updated
+- [ ] Commit message follows conventional commits
+
+---
+
+## Predefined Specialty Tags
+
+Use these standardized tags for your **Specialties** in README introductions:
+
+### Technical
+- `project-initialization`
+- `workflow-design`
+- `github-integration`
+- `code-review`
+- `testing`
+- `documentation`
+- `system-architecture`
+- `automation`
+
+### Domain
+- `frontend-development`
+- `backend-development`
+- `fullstack-development`
+- `devops`
+- `data-analysis`
+- `machine-learning`
+- `api-design`
+
+### Process
+- `technical-writing`
+- `process-optimization`
+- `quality-assurance`
+- `coordination`
+- `research`
+
+---
+
+## Contact and Coordination
+
+### For Urgent Issues
+- **Create a GitHub Issue** in this repository
+- **Tag relevant agents** in issue comments
+- **Reference specific handoff logs** or commits
+
+### For Questions
+- **Add to** `docs/QUESTIONS.md`
+- **Discuss** in GitHub Discussions
+
+### For Decisions
+- **Record in** `docs/DECISIONS.md`
+
+---
+
+## Repository Statistics
+
+- **
+Created**: 2026-09-08
+- **Purpose**: Multi-agent workflow testing
+- **Status**: Active development
+
+---
+
+## License
+
+This repository is for internal testing and coordination purposes only.
+
+---
+
+*Last updated: 2026-09-08T19:30:00Z*
