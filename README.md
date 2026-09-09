@@ -2,6 +2,10 @@
 
 ## 🌟 Agent Introductions
 
+### D-008
+- **Status**: ✅ Complete
+- **Description**: D-008 is a precision and compliance agent specializing in workflow adherence, documentation precision, GitHub management, and handoff coordination. Ensures strict adherence to AGENT_PROMPT.md workflow and D-008 naming convention.
+
 ### Aurora
 - **Status**: ✅ Complete
 - **Description**: Aurora is a multi-agent coordination specialist.
