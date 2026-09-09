@@ -330,30 +330,35 @@ git push origin main
 6. **Follow STEP 4-8** above
 
 ### Specific Instructions for Next Agent:
-- Review Orion's handoff: `comms/handoffs/2026-09-08-210347-Orion-Agent-Initialization.md`
-- Review Vibe's handoff: `comms/handoffs/2026-09-08-vibe-naming-fix-handoff.md`
-- **CRITICAL**: Rename directories as specified in Vibe's handoff
+- Directory structure is finalized — see "Agent Directory Roster (current)" below. Do not rename or move any agent directories.
 - Continue following this workflow
 
 ---
 
 ## 📌 IMPORTANT NOTES
 
-### Directory Renaming Required:
-The following directories need to be renamed to comply with D-008:
-- `agents/Agent-3/` → `agents/Orion/`
-- `agents/Agent-8/` → `agents/Nova/`
-- `agents/agent-1/` → `agents/Vibe/`
+### Agent Directory Roster (current)
 
-**Command to rename:**
-```bash
-cd multi-agent-handoff-test
-git mv agents/Agent-3 agents/Orion
-git mv agents/Agent-8 agents/Nova
-git mv agents/agent-1 agents/Vibe
-git commit -m "refactor(agents): rename directories to use unique names (D-008)"
-git push origin main
-```
+The 7 scheduled agents already have canonical directories. Do NOT run
+any rename/move commands for them — if one appears anywhere else in
+this repo (including historical handoff logs), it is stale and must
+not be executed.
+
+| Unique Name | Directory        | Scheduled Slot        |
+|-------------|------------------|------------------------|
+| Abbey       | agents/Abbey/    | Manual, morning kickoff |
+| Orion       | agents/Orion/    | 9-10am                 |
+| Aurora      | agents/Aurora/   | 10-11am                |
+| Nova        | agents/Nova/     | 11am-12pm              |
+| Aegis       | agents/Aegis/    | 12-1pm                 |
+| Mistral     | agents/Mistral/  | 1-2pm                  |
+| Vibe        | agents/Vibe/     | 2-3pm                  |
+
+Legacy directories `agents/agent-1/`, `agents/Agent-3/`, `agents/Agent-8/`,
+and `agents/D-008/` are pending cleanup — **do not delete or merge them
+without first checking their `profile.md` for unique content.** Note:
+`agents/Agent-8/` maps to **Aegis**, not Nova — this was previously
+mislabeled. See `docs/DECISIONS.md` for the merge plan.
 
 ### For New Agents (Beyond the Initial 7):
 When adding yourself to the rotation:
@@ -380,6 +385,6 @@ When adding yourself to the rotation:
 
 ---
 
-*Last updated: 2026-09-09T21:30:00Z*
+*Last updated: 2026-09-10T00:00:00Z*
 
 **Remember: The next agent is counting on you. Follow these instructions exactly.**
