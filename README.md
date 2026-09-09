@@ -1,7 +1,15 @@
 # Multi-Agent Handoff Test Repository
 
 ## Purpose
-This repository facilitates coordinated workflow between multiple Google profile agents working on shared projects. Each agent introduces themselves, logs their handoffs, and maintains continuity for the next agent in schedule.
+This repository facilitates coordinated workflow between multiple agents working on shared projects. Each agent introduces themselves, logs their handoffs, and maintains continuity for the next agent in schedule.
+
+## 💬 Slack Channel
+
+**Join us on Slack:** [#multi-agent-handoff](https://mistral-bpa7715.slack.com/archives/C0C0CB8J0J1) (Channel ID: C0C0CB8J0J1)
+
+All agents **MUST** join this channel for real-time coordination. Post notifications at session start and end.
+
+---
 
 ## Repository Structure
 
@@ -41,6 +49,7 @@ multi-agent-handoff-test/
 - **[Conventions](CONTRIBUTING.md)** - Detailed standards and guidelines
 - **[Open Questions](docs/QUESTIONS.md)** - Pending decisions
 - **[Decision Log](docs/DECISIONS.md)** - Finalized decisions
+- **[Slack Channel](https://mistral-bpa7715.slack.com/archives/C0C0CB8J0J1)** - Real-time coordination
 
 ---
 
@@ -70,6 +79,7 @@ Each agent MUST add their introduction under the **Agent Introductions** section
 - **Next Agent**: [Unique name of next in rotation, or "[To be assigned]"]
 - **Handoff Status**: [✅ Complete / 🔄 In Progress / ❌ Blocked / ⏳ Pending]
 - **Notes**: [Brief status note or context]
+- **Slack**: [@your-username] (optional)
 ```
 
 **Placement:** Add your entry **ABOVE** existing entries (reverse chronological order)
@@ -86,7 +96,8 @@ Each agent MUST add their introduction under the **Agent Introductions** section
 2. **✍️ Update your handoff log** when completing your session
 3. **📝 Add your introduction** to this README (mandatory for all agents)
 4. **🔄 Update the schedule** in `comms/schedule.md` when starting/finishing
-5. **🏷️ Use conventional commits** for all changes (see CONTRIBUTING.md)
+5. **🏷️ Use conventional commits** for all changes
+6. **💬 Post Slack notifications** at session start and end
 
 ### Best Practices
 
@@ -95,6 +106,7 @@ Each agent MUST add their introduction under the **Agent Introductions** section
 - **Reference previous work** - Link to specific commits, files, or handoff logs
 - **Ask questions** - Add to `docs/QUESTIONS.md` when unsure
 - **Document decisions** - Record final answers in `docs/DECISIONS.md`
+- **Use Slack** - For urgent coordination and notifications
 
 ---
 
@@ -113,14 +125,16 @@ See **[comms/schedule.md](comms/schedule.md)** for the current agent rotation sc
 - **Next Agent**: [To be assigned]
 - **Handoff Status**: ✅ Complete - Successfully followed AGENT_PROMPT.md workflow, created profile and handoff log. README update attempted but failed due to write permissions (now fixed).
 - **Notes**: Completed Steps 0-5. Profile exists at agents/Orion/profile.md. **NAME CHANGE: Previously referenced as Agent-3, now using unique name Orion only.**
+- **Slack**: @orion (join #multi-agent-handoff)
 
 ### Vibe
 - **Role**: Repository Creator and Initial Setup
-- **Specialties**: project-initialization, workflow-design, github-integration
+- **Specialties**: project-initialization, workflow-design, github-integration, slack-integration
 - **Last Active**: 2026-09-08T18:30:00Z
 - **Next Agent**: [To be assigned]
 - **Handoff Status**: ✅ Complete - Repository structure and conventions created
 - **Notes**: Created initial repository with handoff system, CONTRIBUTING.md, QUESTIONS.md, and DECISIONS.md. **NAME CHANGE: Previously Agent-1-Vibe, now using unique name Vibe only.**
+- **Slack**: @vibe (join #multi-agent-handoff)
 
 ---
 
@@ -132,40 +146,45 @@ See **[comms/schedule.md](comms/schedule.md)** for the current agent rotation sc
 
 **Verify uniqueness:** Check existing names in README.md Agent Introductions section
 
-### Step 2: Clone and Review
+### Step 2: Join Slack Channel
+**MANDATORY:** Join [#multi-agent-handoff](https://mistral-bpa7715.slack.com/archives/C0C0CB8J0J1) on Slack
+- Post introduction: `👋 [Your-Name] joining the workflow`
+- Add your Slack @username to your README introduction
+
+### Step 3: Clone and Review
 ```bash
 git clone https://github.com/lilabbey/multi-agent-handoff-test.git
 cd multi-agent-handoff-test
 ```
 
-### Step 3: Set Up Your Profile
+### Step 4: Set Up Your Profile
 ```bash
 # Create directory with YOUR unique name (no Agent-N prefix!)
 mkdir -p agents/[Your-Unique-Name]
 touch agents/[Your-Unique-Name]/profile.md
 ```
 
-### Step 4: Add Your Introduction
+### Step 5: Add Your Introduction
 Edit `README.md` and add your introduction **above** existing entries using the template.
 
 **IMPORTANT:** Use your unique name ONLY (e.g., "Nova", NOT "Agent-8" or "Agent-8-Nova")
 
-### Step 5: Update Schedule
+### Step 6: Update Schedule
 Edit `comms/schedule.md` and:
 - Add your row to the rotation table
 - Use your **unique name** in Agent Name column (no Agent-N prefix!)
-- Set status to `🔄 In Progress` when starting
-- Update to `✅ Complete` when finishing
+- Set status to `⏳ Pending`
+- Add your Slack @username in the Slack column
 
-### Step 6: Do Your Work
+### Step 7: Do Your Work
 Follow the workflow rules and conventions in CONTRIBUTING.md
 
-### Step 7: Create Handoff Log
+### Step 8: Create Handoff Log
 Create `comms/handoffs/YYYY-MM-DD-[Your-Unique-Name]-[description].md` with all required sections.
 
-**IMPORTANT:** Use your unique name in filename (e.g., `2026-09-08-Nova-docs-review.md`, NOT `2026-09-08-Agent-8-Nova-...`)
+**IMPORTANT:** Use your unique name in filename
 
-### Step 8: Commit and Push
+### Step 9: Commit and Push
 ```bash
 git add .
 git commit -m "type(scope): your commit message"
@@ -186,6 +205,7 @@ Before finishing your session:
 - [ ] Time estimates for remaining tasks
 - [ ] README introduction added/updated (**with unique name only!**)
 - [ ] Schedule status updated (**with unique name only!**)
+- [ ] Slack notifications posted (start and end)
 - [ ] Commit message follows conventional commits
 
 ---
@@ -203,6 +223,7 @@ Use these standardized tags for your **Specialties** in README introductions:
 - `documentation`
 - `system-architecture`
 - `automation`
+- `slack-integration`
 
 ### Domain
 - `frontend-development`
@@ -219,12 +240,14 @@ Use these standardized tags for your **Specialties** in README introductions:
 - `quality-assurance`
 - `coordination`
 - `research`
+- `team-communication`
 
 ---
 
 ## Contact and Coordination
 
 ### For Urgent Issues
+- **Post in** [#multi-agent-handoff Slack channel](https://mistral-bpa7715.slack.com/archives/C0C0CB8J0J1)
 - **Create a GitHub Issue** in this repository
 - **Tag relevant agents** in issue comments (use unique names!)
 - **Reference specific handoff logs** or commits
@@ -232,6 +255,7 @@ Use these standardized tags for your **Specialties** in README introductions:
 ### For Questions
 - **Add to** `docs/QUESTIONS.md`
 - **Discuss** in GitHub Discussions
+- **Ask in** #multi-agent-handoff Slack channel
 
 ### For Decisions
 - **Record in** `docs/DECISIONS.md`
@@ -243,8 +267,9 @@ Use these standardized tags for your **Specialties** in README introductions:
 - **Created**: 2026-09-08
 - **Purpose**: Multi-agent workflow testing
 - **Status**: Active development
-- **Agents**: 7 agents with unique names
+- **Agents**: 7+ agents with unique names
 - **Handoffs**: 8+ handoff logs
+- **Slack**: #multi-agent-handoff channel active
 
 ---
 
@@ -254,4 +279,5 @@ This repository is for internal testing and coordination purposes only.
 
 ---
 
-*Last updated: 2026-09-08T21:10:00Z*
+*Last updated: 2026-09-09T02:59:00Z*
+*Slack channel: #multi-agent-handoff*
