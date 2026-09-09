@@ -103,7 +103,7 @@ This document records all final decisions made by the agent team to maintain a s
 - **Rationale**: Simpler, more memorable, avoids confusion when agents join/leave rotation. Numeric prefixes (Agent-1, Agent-3, etc.) cause inconsistency and make it harder to reference agents.
 - **Proposed By**: Vibe
 - **Agreed By**: Orion, Submitter App
-- **Related Questions**: Q1 from Orion's handoff (2026-09-08-210347-Orion-Agent-Initialization.md)
+- **Related Questions**: Q1 from Orion's handoff
 - **Impact**: 
   - All agent directories use format: `agents/[Unique-Name]/` (e.g., `agents/Orion/`, NOT `agents/Agent-3/`)
   - All README introductions use format: `### [Unique-Name]` (e.g., `### Orion`, NOT `### Agent-3 - Orion`)
@@ -111,6 +111,51 @@ This document records all final decisions made by the agent team to maintain a s
   - All handoff log filenames use format: `YYYY-MM-DD-[Unique-Name]-[description].md` (e.g., `2026-09-08-Orion-initialization.md`, NOT `2026-09-08-Agent-3-Orion-...`)
   - All existing references to Agent-1, Agent-3, etc. have been updated to use unique names only
 - **Status**: **ACTIVE - EFFECTIVE IMMEDIATELY**
+
+### Communication
+
+#### D-009 - Slack Integration for Real-Time Coordination
+- **Date**: 2026-09-09
+- **Decision**: All agents MUST use Slack channel #multi-agent-handoff for real-time coordination and notifications
+- **Rationale**: Faster communication, better team awareness, immediate notifications for session start/end
+- **Proposed By**: Abbey
+- **Agreed By**: All agents
+- **Related Questions**: None
+- **Impact**: 
+  - Session start notification mandatory: `🔄 [Name] starting [time]`
+  - Session end notification mandatory: `✅ [Name] complete [time] - [summary]`
+  - All agents must join channel: #multi-agent-handoff (C0C0CB8J0J1)
+  - Channel link: https://mistral-bpa7715.slack.com/archives/C0C0CB8J0J1
+- **Status**: **ACTIVE - EFFECTIVE IMMEDIATELY**
+
+#### D-010 - Graduation Criteria
+- **Date**: 2026-09-09
+- **Decision**: Only Abbey (human coordinator) can clear graduation criteria to move from bootstrap to production mode
+- **Rationale**: Human oversight required for production readiness and niche selection
+- **Proposed By**: Abbey
+- **Agreed By**: All agents
+- **Related Questions**: None
+- **Impact**: 
+  - No agent can declare graduation
+  - Only Abbey can update docs/GRADUATION.md to "CLEARED"
+  - Bootstrap mode continues until Abbey's morning review
+- **Status**: **ACTIVE - EFFECTIVE IMMEDIATELY**
+
+### Workflow
+
+#### D-011 - Bootstrap Day Protocol
+- **Date**: 2026-09-09
+- **Decision**: Day 1 (2026-09-09) is Bootstrap Day - scaffold only, no content production
+- **Rationale**: Infrastructure must be established before content creation
+- **Proposed By**: Abbey
+- **Agreed By**: All agents
+- **Related Questions**: None
+- **Impact**: 
+  - Today's tasks: PROJECT_BRIEF.md, STYLE_GUIDE.md, PIPELINE.md, audit, dry-run
+  - No drafting or publishing of actual content
+  - No niche decision by agents (Abbey decides)
+  - All work is infrastructure/scaffold only
+- **Status**: **ACTIVE - TODAY ONLY**
 
 ---
 
@@ -138,6 +183,9 @@ This document records all final decisions made by the agent team to maintain a s
 | D-006 | Schedule Update Timing | 2026-09-08 | Active | Workflow |
 | D-007 | Standardize Specialty Format | 2026-09-08 | Active | Documentation |
 | D-008 | **Use Unique Names Without Numeric Prefixes** | 2026-09-08 | **Active** | **Naming** |
+| D-009 | **Slack Integration for Real-Time Coordination** | 2026-09-09 | **Active** | **Communication** |
+| D-010 | **Graduation Criteria** | 2026-09-09 | **Active** | **Workflow** |
+| D-011 | **Bootstrap Day Protocol** | 2026-09-09 | **Active** | **Workflow** |
 
 ---
 
@@ -161,6 +209,7 @@ This document records all final decisions made by the agent team to maintain a s
 
 - [CONTRIBUTING.md](../CONTRIBUTING.md) - Workflow conventions and standards
 - [QUESTIONS.md](./QUESTIONS.md) - Open questions and opinions
+- [GRADUATION.md](../GRADUATION.md) - Production readiness criteria
 
 ---
 
@@ -175,16 +224,16 @@ Starting immediately, **ALL agents must use unique names WITHOUT numeric prefixe
 - Agent-1-Vibe, Agent-3-Orion, etc.
 
 **USE INSTEAD:**
-- Vibe, Orion, Nova, Aurora, Mercury, etc.
+- Abbey, Orion, Aurora, Nova, Aegis, Mistral, Vibe, rezurrector
 
 This applies to:
-- Directory names: `agents/Vibe/` NOT `agents/Agent-1-Vibe/`
-- README introductions: `### Vibe` NOT `### Agent-1 - Vibe`
-- Schedule entries: `Vibe` NOT `Agent-1`
-- Handoff filenames: `2026-09-08-Vibe-setup.md` NOT `2026-09-08-Agent-1-Vibe-setup.md`
+- Directory names: `agents/Abbey/` NOT `agents/Agent-1/`
+- README introductions: `### Abbey` NOT `### Agent-1 - Abbey`
+- Schedule entries: `Abbey` NOT `Agent-1`
+- Handoff filenames: `2026-09-09-Abbey-kickoff.md` NOT `2026-09-09-Agent-1-kickoff.md`
 
 **All existing files have been updated to reflect this change.**
 
 ---
 
-*Last updated: 2026-09-08T21:10:00Z*
+*Last updated: 2026-09-09T20:25:00Z*
