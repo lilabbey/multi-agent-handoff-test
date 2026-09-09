@@ -31,6 +31,52 @@ You are a unique-named agent in a multi-agent workflow. Follow these steps **EXA
 
 ---
 
+## 💬 SLACK INTEGRATION
+
+**Channel:** `#multi-agent-handoff` (ID: `C0C0CB8J0J1`)
+**Link:** https://mistral-bpa7715.slack.com/archives/C0C0CB8J0J1
+
+### Mandatory Slack Notifications
+
+You **MUST** post to Slack at these key points:
+
+1. **At Session Start:**
+   - Format: `🔄 [Your-Unique-Name] starting session - reviewing handoffs`
+   - Example: `🔄 Orion starting session - reviewing handoffs`
+
+2. **At Session End:**
+   - Format: `✅ [Your-Unique-Name] session complete - [brief summary]`
+   - Example: `✅ Orion session complete - updated schedule, created handoff log`
+
+3. **When Blocked:**
+   - Format: `❌ [Your-Unique-Name] BLOCKED: [reason]`
+   - Then add to `docs/QUESTIONS.md`
+   - Example: `❌ Orion BLOCKED: Need clarification on project spec`
+
+4. **Urgent Questions:**
+   - Format: `❓ [Your-Unique-Name] needs help: [question]`
+   - Example: `❓ Orion needs help: How to handle merge conflict?`
+
+### Slack Message Format Rules
+- Always start with emoji + your unique name
+- Keep messages concise (< 200 chars)
+- Use threads for discussions on specific topics
+- @mention specific agents when needed (use their Slack @username)
+
+### Emoji Key
+| Emoji | Meaning | When to Use |
+|-------|---------|-------------|
+| 🔄 | In Progress | Starting session |
+| ✅ | Complete | Finishing session |
+| ❓ | Question | Need help/clarification |
+| ❌ | Blocked | Cannot proceed |
+| 🤔 | Proposal | Suggesting a decision |
+| 📝 | Documentation | Updated docs |
+| 🚀 | Deployment | New feature live |
+| ⚠️ | Warning | Issue found |
+
+---
+
 ## 📋 STEP-BY-STEP WORKFLOW
 
 ### STEP 0: PREPARATION (Before Your Session)
@@ -87,6 +133,16 @@ ls -t comms/handoffs/*.md | head -1 | xargs cat
 **Check for Recent Decisions:**
 1. Read `docs/DECISIONS.md`
 2. Note any new decisions that affect your work
+
+---
+
+### STEP 2.5: NOTIFY SLACK (Start of Session)
+
+**Post to `#multi-agent-handoff`:**
+```bash
+# Format: 🔄 [Your-Unique-Name] starting session - [action]
+# Example: 🔄 Orion starting session - reviewing handoffs
+```
 
 ---
 
@@ -176,6 +232,16 @@ footer (optional)
 
 ---
 
+### STEP 6.5: NOTIFY SLACK (End of Session)
+
+**Post to `#multi-agent-handoff`:**
+```bash
+# Format: ✅ [Your-Unique-Name] session complete - [brief summary]
+# Example: ✅ Orion session complete - updated schedule, created handoff log
+```
+
+---
+
 ### STEP 7: COMMIT AND PUSH
 
 ```bash
@@ -201,6 +267,7 @@ git push origin main
 - [ ] All files use your unique name (no Agent-N prefixes)
 - [ ] Commit message follows conventional commits
 - [ ] All changes are pushed to GitHub
+- [ ] Slack notifications sent (start and end)
 
 ---
 
@@ -210,9 +277,10 @@ git push origin main
 2. **ALWAYS** create a handoff log when done
 3. **ALWAYS** update schedule status when starting and finishing
 4. **ALWAYS** use conventional commits for all changes
-5. **NEVER** leave questions unanswered - add to `docs/QUESTIONS.md`
-6. **NEVER** make decisions alone - record in `docs/DECISIONS.md`
-7. **NEVER** use Agent-N prefixes - use unique names only (D-008)
+5. **ALWAYS** post Slack notifications at session start and end
+6. **NEVER** leave questions unanswered - add to `docs/QUESTIONS.md`
+7. **NEVER** make decisions alone - record in `docs/DECISIONS.md`
+8. **NEVER** use Agent-N prefixes - use unique names only (D-008)
 
 ---
 
@@ -225,10 +293,11 @@ git push origin main
 4. Document the fix in your handoff log
 
 ### If You Are Blocked:
-1. Update your status in schedule to `❌ Blocked`
-2. Add the blocker to `docs/QUESTIONS.md`
-3. Create a GitHub Issue with details
-4. Tag the next agent in the issue
+1. Post to Slack: `❌ [Your-Name] BLOCKED: [reason]`
+2. Update your status in schedule to `❌ Blocked`
+3. Add the blocker to `docs/QUESTIONS.md`
+4. Create a GitHub Issue with details
+5. Tag the next agent in the issue
 
 ---
 
@@ -243,6 +312,11 @@ git push origin main
 - `comms/schedule.md` - Agent rotation schedule
 - `comms/handoffs/` - Individual handoff logs
 
+### Slack Channel:
+- **Channel:** `#multi-agent-handoff`
+- **Channel ID:** `C0C0CB8J0J1`
+- **Link:** https://mistral-bpa7715.slack.com/archives/C0C0CB8J0J1
+
 ---
 
 ## 🎯 QUICK START FOR NEXT AGENT
@@ -252,10 +326,12 @@ git push origin main
 2. **Check the latest handoff** in `comms/handoffs/`
 3. **Review the schedule** in `comms/schedule.md`
 4. **Update their status** to `🔄 In Progress`
-5. **Follow STEP 4-8** above
+5. **Post to Slack** that they are starting
+6. **Follow STEP 4-8** above
 
 ### Specific Instructions for Next Agent:
 - Review Orion's handoff: `comms/handoffs/2026-09-08-210347-Orion-Agent-Initialization.md`
+- Review Vibe's handoff: `comms/handoffs/2026-09-08-vibe-naming-fix-handoff.md`
 - **CRITICAL**: Rename directories as specified in Vibe's handoff
 - Continue following this workflow
 
@@ -286,6 +362,7 @@ When adding yourself to the rotation:
 3. Add to README: `### [Your-Name]` (ABOVE existing entries)
 4. Add to schedule: Use `[Your-Name]` in Agent Name column
 5. Create handoffs: `YYYY-MM-DD-[Your-Name]-[desc].md`
+6. **Join Slack channel:** `#multi-agent-handoff`
 
 ---
 
@@ -303,6 +380,6 @@ When adding yourself to the rotation:
 
 ---
 
-*Last updated: 2026-09-08T21:10:00Z*
+*Last updated: 2026-09-09T21:30:00Z*
 
 **Remember: The next agent is counting on you. Follow these instructions exactly.**
