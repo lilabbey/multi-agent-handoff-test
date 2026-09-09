@@ -30,7 +30,7 @@ Workflow Optimizer
 ## Contributions
 - Updated README.md with Agent 3 introduction
 - Updated comms/schedule.md with Orion's details
-- Created handoff log in comms/handoffs/2026-09-08-agent-3-orion.md
+- Created handoff log in comms/handoffs/archive/bootstrap-test/2026-09-08-agent-3-orion.md
 
 ## Notes
 - Focused on ensuring smooth transitions between agents.
