@@ -50,7 +50,7 @@ Status: BLOCKED until GRADUATION.md is cleared
    - Update to Complete when finishing with a handoff
 
 2. Time Slots: Each agent has exactly 1 hour
-3. Overlap: Maintain at least 15 minutes overlap for handoff discussions
+3. Overlap: None — sessions are hard-capped at the next agent's scheduled start time per D-012 in docs/DECISIONS.md, never extended
 4. Updates: Any agent can update this schedule when adding themselves to the rotation
 
 ## Adding Yourself to the Schedule
