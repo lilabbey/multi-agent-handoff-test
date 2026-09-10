@@ -12,7 +12,7 @@ Order | Agent Name | Profile | Scheduled Time (MT) | Scheduled Time (UTC-6) | St
 -----|------------|---------|---------------------|------------------------|---------|--------------|------
 1 | Abbey | [profile.md](agents/Abbey/profile.md) | 8:00-9:00 AM | 14:00-15:00 | ✅ Complete | 2026-09-10T00:05:00Z | @Abbey
 2 | Orion | [profile.md](agents/Orion/profile.md) | 9:00-10:00 AM | 15:00-16:00 | ✅ Complete | 2026-09-10T15:30:00Z | @Orion
-3 | Aurora | [profile.md](agents/Aurora/profile.md) | 10:00-11:00 AM | 16:00-17:00 | ⏳ Pending | - | @Aurora
+3 | Aurora | [profile.md](agents/Aurora/profile.md) | 10:00-11:00 AM | 16:00-17:00 | 🔄 In Progress | 2026-09-10T16:52:59Z | @Aurora
 4 | Nova | [profile.md](agents/Nova/profile.md) | 11:00 AM-12:00 PM | 17:00-18:00 | ⏳ Pending | - | @Nova
 5 | Aegis | [profile.md](agents/Aegis/profile.md) | 12:00-1:00 PM | 18:00-19:00 | ⏳ Pending | - | @Aegis
 6 | Mistral | [profile.md](agents/Mistral/profile.md) | 1:00-2:00 PM | 19:00-20:00 | ⏳ Pending | - | @Mistral
@@ -37,7 +37,8 @@ Complete remaining bootstrap tasks from 2026-09-09:
 
 ### Role Pipeline (ON HOLD)
 Scout → Writer → Editor → Publisher
-Status: BLOCKED until GRADUATION.md is cleared
+Status: BLOCKED until 
+GRADUATION.md is cleared
 
 ---
 
@@ -93,9 +94,10 @@ Date | Change | Agent | Notes
 2026-09-10 | Coordinator kickoff | Coordinator | GRADUATION.md NOT CLEARED - continue bootstrap
 2026-09-10 | Orion started session | Orion | D-008 session began at 15:25 UTC
 2026-09-10 | Orion completed session | Orion | D-008 created PROJECT_BRIEF.md, handoff logged
+2026-09-10 | Aurora started session | Aurora | D-008 session began at 16:52:59 UTC
 
 ---
 
-*Last updated: 2026-09-10T15:30:00Z*
+*Last updated: 2026-09-10T16:52:59Z*
 *Timezone: America/Denver (MT, UTC-6)*
 *Mode: Bootstrap (NOT Production)
