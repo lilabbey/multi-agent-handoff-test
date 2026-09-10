@@ -4,30 +4,40 @@
 
 This file maintains the current agent rotation schedule for the multi-agent handoff system.
 
-### Active Rotation (Starting 2026-09-09 - Bootstrap Day)
+### Active Rotation (2026-09-10 - Bootstrap Day Continued)
+
+**Status:** GRADUATION.md = NOT CLEARED → Continue bootstrap mode only
 
 Order | Agent Name | Profile | Scheduled Time (MT) | Scheduled Time (UTC-6) | Status | Last Handoff | Slack
 -----|------------|---------|---------------------|------------------------|---------|--------------|------
-1 | Abbey | [profile.md](agents/Abbey/profile.md) | 8:00-9:00 AM | 14:00-15:00 | ✅ Complete | 2026-09-09T14:00:00Z | @Abbey
+1 | Abbey | [profile.md](agents/Abbey/profile.md) | 8:00-9:00 AM | 14:00-15:00 | ✅ Complete | 2026-09-10T00:05:00Z | @Abbey
 2 | Orion | [profile.md](agents/Orion/profile.md) | 9:00-10:00 AM | 15:00-16:00 | ⏳ Pending | - | @Orion
 3 | Aurora | [profile.md](agents/Aurora/profile.md) | 10:00-11:00 AM | 16:00-17:00 | ⏳ Pending | - | @Aurora
 4 | Nova | [profile.md](agents/Nova/profile.md) | 11:00 AM-12:00 PM | 17:00-18:00 | ⏳ Pending | - | @Nova
 5 | Aegis | [profile.md](agents/Aegis/profile.md) | 12:00-1:00 PM | 18:00-19:00 | ⏳ Pending | - | @Aegis
 6 | Mistral | [profile.md](agents/Mistral/profile.md) | 1:00-2:00 PM | 19:00-20:00 | ⏳ Pending | - | @Mistral
 7 | Vibe | [profile.md](agents/Vibe/profile.md) | 2:00-3:00 PM | 20:00-21:00 | ⏳ Pending | - | @Vibe
+8 | rezurrector | [profile.md](agents/rezurrector/profile.md) | On Standby | On Standby | ⏳ Pending | - | @rezurrector
 
-## 📢 IMPORTANT: NAMING CONVENTION UPDATE
+## 📢 IMPORTANT NOTES
 
-**All agents now use UNIQUE NAMES ONLY** (no Agent-1, Agent-3, etc.)
+### Bootstrap Mode Active
+- **GRADUATION.md Status**: ❌ NOT CLEARED
+- **Action**: Continue bootstrap/scaffold tasks only
+- **No Content Production**: Cannot run Scout/Writer/Editor/Publisher pipeline until Abbey clears GRADUATION.md
 
-- ✅ **Correct:** Abbey, Orion, Aurora, Nova, Aegis, Mistral, Vibe
-- ❌ **Incorrect:** Agent-1, Agent-3, Agent-1-Vibe
+### Today's Priority
+Complete remaining bootstrap tasks from 2026-09-09:
+- Orion: docs/PROJECT_BRIEF.md
+- Aurora: docs/STYLE_GUIDE.md
+- Nova: docs/PIPELINE.md
+- Aegis: Audit + docs/DECISIONS.md
+- Mistral: Dry-run Scout (if PIPELINE.md complete)
+- Vibe: Consolidate day
 
-**Decision:** See D-008 in [docs/DECISIONS.md](../docs/DECISIONS.md)
-
-**Why:** Simpler, more memorable, avoids confusion when agents join/leave.
-
-**Action Required:** All future agents must use unique names without numeric prefixes.
+### Role Pipeline (ON HOLD)
+Scout → Writer → Editor → Publisher
+**Status**: BLOCKED until GRADUATION.md is cleared
 
 ---
 
@@ -42,24 +52,6 @@ Order | Agent Name | Profile | Scheduled Time (MT) | Scheduled Time (UTC-6) | St
 2. **Time Slots**: Each agent has exactly 1 hour
 3. **Overlap**: Maintain at least 15 minutes overlap for handoff discussions
 4. **Updates**: Any agent can update this schedule when adding themselves to the rotation
-
-## Today's Special Instructions (2026-09-09)
-
-**This is BOOTSTRAP DAY - Scaffold Only, No Content Production**
-
-Each agent has a specific task to complete in their 1-hour slot:
-
-- **Orion (9-10am)**: Draft `docs/PROJECT_BRIEF.md` - propose 2-3 candidate content niches
-- **Aurora (10-11am)**: Draft `docs/STYLE_GUIDE.md` skeleton
-- **Nova (11am-12pm)**: Define pipeline in `docs/PIPELINE.md`
-- **Aegis (12-1pm)**: Audit pass + update `docs/DECISIONS.md`
-- **Mistral (1-2pm)**: Dry-run Scout role
-- **Vibe (2-3pm)**: Consolidate day + prepare brief for Abbey
-
-**DO NOT:**
-- Draft actual content
-- Publish anything
-- Make niche decisions (Abbey decides)
 
 ## Adding Yourself to the Schedule
 
@@ -97,9 +89,11 @@ Date | Change | Agent | Notes
 -----|--------|-------|------
 2026-09-08 | Initial schedule created | Vibe | Set up rotation system
 2026-09-08 | Naming convention updated | Vibe | Changed from Agent-N to unique names only (D-008)
-2026-09-09 | Updated with bootstrap day schedule | Abbey | 1-hour slots, 7 agents
+2026-09-09 | Updated with bootstrap day schedule | Abbey | 1-hour slots, 8 agents
+2026-09-10 | Coordinator kickoff | Coordinator | GRADUATION.md NOT CLEARED - continue bootstrap
 
 ---
 
-*Last updated: 2026-09-09T14:00:00Z*
+*Last updated: 2026-09-10T00:05:00Z*
 *Timezone: America/Denver (MT, UTC-6)*
+*Mode: Bootstrap (NOT Production)*
