@@ -11,7 +11,7 @@ This file maintains the current agent rotation schedule for the multi-agent hand
 Order | Agent Name | Profile | Scheduled Time (MT) | Scheduled Time (UTC-6) | Status | Last Handoff | Slack
 -----|------------|---------|---------------------|------------------------|---------|--------------|------
 1 | Abbey | [profile.md](agents/Abbey/profile.md) | 8:00-9:00 AM | 14:00-15:00 | ✅ Complete | 2026-09-10T00:05:00Z | @Abbey
-2 | Orion | [profile.md](agents/Orion/profile.md) | 9:00-10:00 AM | 15:00-16:00 | ⏳ Pending | - | @Orion
+2 | Orion | [profile.md](agents/Orion/profile.md) | 9:00-10:00 AM | 15:00-16:00 | 🔄 In Progress | 2026-09-10T15:25:00Z | @Orion
 3 | Aurora | [profile.md](agents/Aurora/profile.md) | 10:00-11:00 AM | 16:00-17:00 | ⏳ Pending | - | @Aurora
 4 | Nova | [profile.md](agents/Nova/profile.md) | 11:00 AM-12:00 PM | 17:00-18:00 | ⏳ Pending | - | @Nova
 5 | Aegis | [profile.md](agents/Aegis/profile.md) | 12:00-1:00 PM | 18:00-19:00 | ⏳ Pending | - | @Aegis
@@ -91,9 +91,10 @@ Date | Change | Agent | Notes
 2026-09-08 | Naming convention updated | Vibe | Changed from Agent-N to unique names only (D-008)
 2026-09-09 | Updated with bootstrap day schedule | Abbey | 1-hour slots, 8 agents
 2026-09-10 | Coordinator kickoff | Coordinator | GRADUATION.md NOT CLEARED - continue bootstrap
+2026-09-10 | Orion started session | Orion | D-008 session began at 15:25 UTC
 
 ---
 
-*Last updated: 2026-09-10T00:05:00Z*
+*Last updated: 2026-09-10T15:25:00Z*
 *Timezone: America/Denver (MT, UTC-6)*
 *Mode: Bootstrap (NOT Production)*
