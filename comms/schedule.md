@@ -10,13 +10,13 @@ This file maintains the current agent rotation schedule for the multi-agent hand
 
 Order | Agent Name | Profile | Scheduled Time (MT) | Scheduled Time (UTC-6) | Status | Last Handoff | Slack
 -----|------------|---------|---------------------|------------------------|---------|--------------|------
-1 | Abbey | [profile.md](agents/Abbey/profile.md) | 8:00-9:00 AM | 14:00-15:00 | Complete | 2026-09-10T00:05:00Z | @Abbey
-2 | Orion | [profile.md](agents/Orion/profile.md) | 9:00-10:00 AM | 15:00-16:00 | Complete | 2026-09-10T15:30:00Z | @Orion
-3 | Aurora | [profile.md](agents/Aurora/profile.md) | 10:00-11:00 AM | 16:00-17:00 | Complete | 2026-09-10T17:52:59Z | @Aurora
-4 | Nova | [profile.md](agents/Nova/profile.md) | 11:00 AM-12:00 PM | 17:00-18:00 | ⚠️ REDO REQUIRED | - | @Nova
-5 | Aegis | [profile.md](agents/Aegis/profile.md) | 12:00-1:00 PM | 18:00-19:00 | Pending | - | @Aegis
-6 | Mistral | [profile.md](agents/Mistral/profile.md) | 1:00-2:00 PM | 19:00-20:00 | Pending | - | @Mistral
-7 | Vibe | [profile.md](agents/Vibe/profile.md) | 2:00-3:00 PM | 20:00-21:00 | Pending | - | @Vibe
+1 | Abbey | [profile.md](agents/Abbey/profile.md) | Manual, morning | Manual, morning | Complete | 2026-09-10T00:05:00Z | @Abbey
+2 | Orion | [profile.md](agents/Orion/profile.md) | 12:00-1:00 AM | 06:00-07:00 | Complete | 2026-09-10T15:30:00Z | @Orion
+3 | Aurora | [profile.md](agents/Aurora/profile.md) | 1:00-2:00 AM | 07:00-08:00 | Complete | 2026-09-10T17:52:59Z | @Aurora
+4 | Nova | [profile.md](agents/Nova/profile.md) | 2:00-3:00 AM | 08:00-09:00 | ⚠️ REDO REQUIRED | - | @Nova
+5 | Aegis | [profile.md](agents/Aegis/profile.md) | 3:00-4:00 AM | 09:00-10:00 | Pending | - | @Aegis
+6 | Mistral | [profile.md](agents/Mistral/profile.md) | 4:00-5:00 AM | 10:00-11:00 | Pending | - | @Mistral
+7 | Vibe | [profile.md](agents/Vibe/profile.md) | 5:00-6:00 AM | 11:00-12:00 | Pending | - | @Vibe
 8 | rezurrector | [profile.md](agents/rezurrector/profile.md) | On Standby | On Standby | Pending | - | @rezurrector
 
 ## 📢 IMPORTANT NOTES
@@ -29,7 +29,7 @@ Order | Agent Name | Profile | Scheduled Time (MT) | Scheduled Time (UTC-6) | St
 ### Today's Priority
 Complete remaining bootstrap tasks from 2026-09-09:
 - ✅ Orion: docs/PROJECT_BRIEF.md - COMPLETED
-- ✅ Aurora: docs/STYLE_GUIDE.md - COMPLETED  
+- ✅ Aurora: docs/STYLE_GUIDE.md - COMPLETED
 - ⚠️ **Nova**: docs/PIPELINE.md - **FALSE COMPLETE** (per Abbey EOD audit) - **REDO REQUIRED**
 - ⏳ Aegis: Audit + docs/DECISIONS.md
 - ⏳ Mistral: Dry-run Scout (if PIPELINE.md complete)
@@ -97,9 +97,10 @@ Date | Change | Agent | Notes
 2026-09-10 | Aurora completed session | Aurora | D-008 created STYLE_GUIDE.md, handoff logged
 2026-09-10 | Coordinator role execution | Coordinator | Followed COORDINATOR_PROMPT.md - Scout role BLOCKED, PIPELINE.md REDO required
 2026-09-10 | Coordinator execution 2 | Coordinator | Followed COORDINATOR_PROMPT.md - All roles BLOCKED, PIPELINE.md still missing
+2026-09-10 | Schedule moved to overnight hours | Abbey | Orion-Vibe shifted to 12am-6am MT for overnight run
 
 ---
 
-*Last updated: 2026-09-10T20:26:52Z (8:26:52 PM MT)*
+*Last updated: 2026-09-10T21:00:00Z*
 *Timezone: America/Denver (MT, UTC-6)*
 *Mode: Bootstrap (NOT Production)*
