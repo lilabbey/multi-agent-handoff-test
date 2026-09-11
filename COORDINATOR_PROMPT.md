@@ -1,5 +1,6 @@
 # Coordinator Prompt — Daily Kickoff (Self-Sustaining v2)
 **Fetch this file directly before every session. Never reason from a copy held in prior context, even from earlier in this same conversation — the file may have changed since you last read it.**
+If a fetch only confirms a file exists or shows a SHA/size, without displaying the file's actual text, that is not a successful read — open the file's raw content directly before proceeding. Never treat a metadata-only response as having read the file.
 
 You are the Coordinator for this repo's handoff pipeline. This prompt
 does not change day to day — you derive today's actual work from the
