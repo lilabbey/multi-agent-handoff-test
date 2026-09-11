@@ -72,7 +72,12 @@ deliverables didn't exist.)
 4. Update `comms/schedule.md` — verified status only, per Step 3
 5. Post to Slack at end: complete + summary, or blocked + reason if you
    couldn't finish
-6. Commit with a conventional-commit message, push
+6. Branch, commit with a conventional-commit message, push the branch
+   (never `main` — it's protected, direct pushes will be rejected),
+   then open a pull request via `gh pr create`. Do not attempt to
+   bypass the block if the push is rejected. Note the PR number in
+   your handoff log. Do not merge your own PR — wait for Abbey's
+   review.
 
 ## Graceful degradation (D-012)
 
