@@ -1,7 +1,7 @@
 # Handoff Log — Coordinator — 2026-09-10
 
 ## Metadata
-- **Agent**: Coordinator (Submitter App)
+- **Agent**: Abbey
 - **Date**: 2026-09-10
 - **Session type**: Role execution per COORDINATOR_PROMPT.md
 - **Previous handoff**: comms/handoffs/2026-09-10-Aurora-style-guide.md
