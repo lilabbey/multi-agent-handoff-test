@@ -184,11 +184,11 @@ footer (optional)
 **REQUIRED SECTIONS:**
 
 #### Metadata
-- **Agent**: [Your-Unique-Name]
+- **Agent**: [AGENT]Your-Unique-Name[/AGENT]
 - **Date**: YYYY-MM-DD
 - **Time**: HH:MM:SSZ (ISO 8601)
-- **Previous Agent**: [Name from schedule]
-- **Next Agent**: [Name from schedule or "[To be assigned]"]
+- **Previous Agent**: [AGENT]Name from schedule[/AGENT]
+- **Next Agent**: [AGENT]Name from schedule[/AGENT] or "[To be assigned]"
 - **Status**: ✅ Complete / 🔄 In Progress / ❌ Blocked
 
 #### Summary
