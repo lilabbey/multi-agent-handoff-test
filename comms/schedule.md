@@ -13,7 +13,7 @@ Order | Agent Name | Profile | Scheduled Time (MT) | Scheduled Time (UTC-6) | St
 1 | Abbey | [profile.md](agents/Abbey/profile.md) | Manual, morning | Manual, morning | Complete | 2026-09-10T00:05:00Z | @Abbey
 2 | Orion | [profile.md](agents/Orion/profile.md) | 12:00-1:00 AM | 06:00-07:00 | Complete | 2026-09-10T15:30:00Z | @Orion
 3 | Aurora | [profile.md](agents/Aurora/profile.md) | 1:00-2:00 AM | 07:00-08:00 | Complete | 2026-09-10T17:52:59Z | @Aurora
-4 | D-008 | [profile.md](agents/D-008/profile.md) | 2:00-3:00 AM | 08:00-09:00 | 🔄 In Progress | - | @D-008
+4 | D-008 | [profile.md](agents/D-008/profile.md) | 2:00-3:00 AM | 08:00-09:00 | ✅ Complete | 2026-09-11T07:54:00Z | @D-008
 5 | Nova | [profile.md](agents/Nova/profile.md) | 3:00-4:00 AM | 09:00-10:00 | ⚠️ REDO REQUIRED | - | @Nova
 6 | Aegis | [profile.md](agents/Aegis/profile.md) | 4:00-5:00 AM | 10:00-11:00 | Pending | - | @Aegis
 7 | Mistral | [profile.md](agents/Mistral/profile.md) | 5:00-6:00 AM | 11:00-12:00 | Pending | - | @Mistral
@@ -31,25 +31,25 @@ Order | Agent Name | Profile | Scheduled Time (MT) | Scheduled Time (UTC-6) | St
 Complete remaining bootstrap tasks from 2026-09-09:
 - ✅ Orion: docs/PROJECT_BRIEF.md - COMPLETED
 - ✅ Aurora: docs/STYLE_GUIDE.md - COMPLETED
-- ⚠️ Nova: docs/PIPELINE.md - FALSE COMPLETE (per Abbey EOD audit) - REDO REQUIRED
+- ✅ D-008: docs/PIPELINE.md - COMPLETED (resolved Nova's false complete)
+- ⚠️ Nova: docs/PIPELINE.md - VALIDATION REQUIRED (D-008's version needs review)
 - ⏳ Aegis: Audit + docs/DECISIONS.md
-- ⏳ Mistral: Dry-run Scout (if PIPELINE.md complete)
+- ⏳ Mistral: Dry-run Scout (if PIPELINE.md validated)
 - ⏳ Vibe: Consolidate day
-- 🔄 D-008: Assist with PIPELINE.md creation (current session)
 
 ### Role Pipeline (ON HOLD)
 Scout → Writer → Editor → Publisher
-**Status**: BLOCKED until GRADUATION.md is cleared AND docs/PIPELINE.md exists
+**Status**: BLOCKED until GRADUATION.md is cleared AND docs/PIPELINE.md validated
 
 ---
 
 ## Schedule Instructions
 
 1. **Next Agent**: The agent scheduled after the current one should:
-   - Review all handoff logs in (comms/handoffs/)
+   - Review all handoff logs in `comms/handoffs/`
    - Check the latest commit for any changes
-   - Update their status to (🔄 In Progress) when starting
-   - Update to (✅ Complete) when finishing with a handoff
+   - Update their status to `🔄 In Progress` when starting
+   - Update to `✅ Complete` when finishing with a handoff
 
 2. **Time Slots**: Each agent has exactly 1 hour
 3. **Overlap**: None — sessions are hard-capped at the next agent's scheduled start time per D-012 in docs/DECISIONS.md, never extended
@@ -62,19 +62,19 @@ To join the rotation:
 1. Add a new row to the schedule table **at the bottom**
 2. Specify your:
    - **Agent Name**: Your unique name (e.g., Abbey, NOT Agent-1)
-   - **Profile**: Link to your profile: ([profile.md](agents/[Your-Name]/profile.md))
+   - **Profile**: Link to your profile: `[profile.md](agents/[Your-Name]/profile.md)`
    - **Preferred time slot** (or "Flexible")
-   - **Initial status**: (⏳ Pending)
-3. Create your profile in (agents/[Your-Name]/profile.md)
-4. Add your introduction to (README.md) **above** existing entries
-5. Commit with message: (chore(schedule): add [Your-Name] to rotation)
+   - **Initial status**: `⏳ Pending`
+3. Create your profile in `agents/[Your-Name]/profile.md`
+4. Add your introduction to `README.md` **above** existing entries
+5. Commit with message: `chore(schedule): add [Your-Name] to rotation`
 
 ## Rotation Rules
 
 - **Order**: Agents proceed in the order listed in the table above
 - **Handoff**: Each agent must create a handoff log before the next agent starts
 - **Continuity**: If an agent cannot complete their slot, they should:
-  - Update their status to (❌ Blocked) or (⚠️ Delayed)
+  - Update their status to `❌ Blocked` or `⚠️ Delayed`
   - Add notes about the issue
   - Notify the next agent via GitHub issues
 
@@ -89,6 +89,7 @@ For urgent coordination outside scheduled times:
 
 Date | Change | Agent | Notes
 -----|--------|-------|---
+---
 2026-09-08 | Initial schedule created | Vibe | Set up rotation system
 2026-09-08 | Naming convention updated | Vibe | Changed from Agent-N to unique names only (D-008)
 2026-09-09 | Updated with bootstrap day schedule | Abbey | 1-hour slots, 8 agents
@@ -101,9 +102,10 @@ Date | Change | Agent | Notes
 2026-09-10 | Coordinator execution 2 | Coordinator | Followed COORDINATOR_PROMPT.md - All roles BLOCKED, PIPELINE.md still missing
 2026-09-10 | Schedule moved to overnight hours | Abbey | Orion-Vibe shifted to 12am-6am MT for overnight run
 2026-09-11 | D-008 added to rotation | D-008 | Added to assist with PIPELINE.md creation
+2026-09-11 | D-008 completed session | D-008 | Created PIPELINE.md, resolved critical blocker
 
 ---
 
-*Last updated: 2026-09-11T07:00:00Z*
+*Last updated: 2026-09-11T07:54:00Z*
 *Timezone: America/Denver (MT, UTC-6)*
 *Mode: Bootstrap (NOT Production)
