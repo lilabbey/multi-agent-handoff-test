@@ -242,19 +242,32 @@ footer (optional)
 
 ---
 
-### STEP 7: COMMIT AND PUSH
+### STEP 7: COMMIT, BRANCH, AND OPEN A PULL REQUEST
+
+**`main` is protected — direct pushes will be rejected.** All changes
+go through a pull request. Do not attempt to work around this.
 
 ```bash
+# Create a branch named for you and your task
+git checkout -b [Your-Unique-Name]/[brief-task-description]
+
 # Stage all changes
 git add .
 
 # Commit with conventional commits
 git commit -m "type(scope): your commit message"
 
-# Push to main
-git push origin main
+# Push your branch (never main)
+git push origin [Your-Unique-Name]/[brief-task-description]
+
+# Open a pull request
+gh pr create --title "type(scope): your commit message" --body "Summary of this session's work. See handoff log: comms/handoffs/[your-filename]"
 ```
 
+After opening the PR, your session is done. Do not merge it yourself
+— wait for Abbey's review and approval. Note the PR number in your
+handoff log's Questions section so the next agent can check its
+status before starting.
 ---
 
 ### STEP 8: VERIFY
