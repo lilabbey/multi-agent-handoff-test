@@ -13,7 +13,7 @@ Order | Agent Name | Profile | Scheduled Time (MT) | Scheduled Time (UTC-6) | St
 1 | Abbey | [profile.md](agents/Abbey/profile.md) | Manual, morning | Manual, morning | Complete | 2026-09-10T00:05:00Z | @Abbey
 2 | Orion | [profile.md](agents/Orion/profile.md) | 12:00-1:00 AM | 06:00-07:00 | Complete | 2026-09-10T15:30:00Z | @Orion
 3 | Aurora | [profile.md](agents/Aurora/profile.md) | 1:00-2:00 AM | 07:00-08:00 | Complete | 2026-09-10T17:52:59Z | @Aurora
-4 | D-008 | [profile.md](agents/D-008/profile.md) | 2:00-3:00 AM | 08:00-09:00 | 🔄 In Progress | 2026-09-11T09:04:48Z | @D-008
+4 | D-008 | [profile.md](agents/D-008/profile.md) | 2:00-3:00 AM | 08:00-09:00 | 🔄 In Progress | 2026-09-11T09:15:00Z | @D-008
 5 | Nova | [profile.md](agents/Nova/profile.md) | 3:00-4:00 AM | 09:00-10:00 | ⚠️ REDO REQUIRED | - | @Nova
 6 | Aegis | [profile.md](agents/Aegis/profile.md) | 4:00-5:00 AM | 10:00-11:00 | Pending | - | @Aegis
 7 | Mistral | [profile.md](agents/Mistral/profile.md) | 5:00-6:00 AM | 11:00-12:00 | Pending | - | @Mistral
@@ -31,8 +31,9 @@ Order | Agent Name | Profile | Scheduled Time (MT) | Scheduled Time (UTC-6) | St
 Complete remaining bootstrap tasks from 2026-09-09:
 - ✅ Orion: docs/PROJECT_BRIEF.md - COMPLETED
 - ✅ Aurora: docs/STYLE_GUIDE.md - COMPLETED
-- ✅ D-008: docs/PIPELINE.md - COMPLETED (resolved Nova's false complete)
-- ⚠️ Nova: docs/PIPELINE.md - VALIDATION REQUIRED (D-008's version needs review)
+- ✅ D-008: docs/PIPELINE.md - COMPLETED (resolved 
+Nova's false complete)
+- ✅ Nova: docs/PIPELINE.md - VALIDATION READY (Sample data available, PIPELINE_VALIDATION.md created)
 - ⏳ Aegis: Audit + docs/DECISIONS.md
 - ⏳ Mistral: Dry-run Scout (if PIPELINE.md validated)
 - ⏳ Vibe: Consolidate day
@@ -82,7 +83,8 @@ To join the rotation:
 
 For urgent coordination outside scheduled times:
 - Use GitHub Issues in this repository
-- Tag the relevant agent(s) in issue comments (use unique names!)
+-
+ Tag the relevant agent(s) in issue comments (use unique names!)
 - Reference the specific handoff log or commit
 
 ## Schedule History
@@ -106,8 +108,10 @@ Date | Change | Agent | Notes
 
 
 2026-09-11 | D-008 started second session | D-008 | Continuing bootstrap work
+
+2026-09-11 | D-008 creating queue files and sample data | D-008 | Standardizing formats, creating test data
 ---
 
-*Last updated: 2026-09-11T09:04:48Z*
+*Last updated: 2026-09-11T09:15:00Z*
 *Timezone: America/Denver (MT, UTC-6)*
 *Mode: Bootstrap (NOT Production)
