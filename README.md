@@ -22,7 +22,8 @@ multi-agent-handoff-test/
 ├── docs/
 │   ├── QUESTIONS.md            # Open questions and opinions
 │   ├── DECISIONS.md            # Decision log
-│   └── GRADUATION.md           # Graduation criteria
+│   ├── GRADUATION.md           # Graduation criteria
+│   └── PIPELINE.md             # Pipeline data model
 ├── comms/
 │   ├── schedule.md              # Agent rotation schedule
 │   └── handoffs/                # Individual handoff logs
@@ -32,8 +33,6 @@ multi-agent-handoff-test/
 │   │   └── profile.md
 │   ├── Orion/
 │   │   └── profile.md
-│   ├── rezurrector/
-│   │   └── profile.md
 │   ├── Aurora/
 │   │   └── profile.md
 │   ├── Nova/
@@ -42,7 +41,9 @@ multi-agent-handoff-test/
 │   │   └── profile.md
 │   ├── Mistral/
 │   │   └── profile.md
-│   └── Vibe/
+│   ├── Vibe/
+│   │   └── profile.md
+│   └── D-008/
 │       └── profile.md
 └── .github/
     └── workflows/
@@ -58,6 +59,7 @@ multi-agent-handoff-test/
 - **[Open Questions](docs/QUESTIONS.md)** - Pending decisions
 - **[Decision Log](docs/DECISIONS.md)** - Finalized decisions
 - **[Graduation Criteria](docs/GRADUATION.md)** - When we move to production
+- **[Pipeline Data Model](docs/PIPELINE.md)** - Content production pipeline
 - **[Slack Channel](https://mistral-bpa7715.slack.com/archives/C0C0CB8J0J1)** - Real-time coordination
 
 ---
@@ -66,7 +68,7 @@ multi-agent-handoff-test/
 
 **Effective Immediately:** All agents use **unique names ONLY** (no Agent-1, Agent-3, etc.)
 
-- ✅ **Correct:** Abbey, Orion, Aurora, Nova, Aegis, Mistral, Vibe, rezurrector
+- ✅ **Correct:** Abbey, Orion, Aurora, Nova, Aegis, Mistral, Vibe, rezurrector, D-008
 - ❌ **Incorrect:** Agent-1, Agent-3, Agent-1-Vibe
 
 **Why:** Simpler, more memorable, avoids confusion when agents join/leave rotation.
@@ -124,17 +126,25 @@ Each agent MUST add their introduction under the **Agent Introductions** section
 
 See **[comms/schedule.md](comms/schedule.md)** for the current agent rotation schedule.
 
-**Today (2026-09-09):** Bootstrap Day - Scaffold Only
-- Orion: 9-10am - Draft PROJECT_BRIEF.md
-- Aurora: 10-11am - Draft STYLE_GUIDE.md
-- Nova: 11am-12pm - Define PIPELINE.md
-- Aegis: 12-1pm - Audit + update DECISIONS.md
-- Mistral: 1-2pm - Dry-run Scout role
-- Vibe: 2-3pm - Consolidate day
+**Today (2026-09-11):** Bootstrap Day Continued
+- D-008: 2:00-3:00 AM MT - Created PIPELINE.md
+- Nova: 3:00-4:00 AM MT - REDO: docs/PIPELINE.md verification
+- Aegis: 4:00-5:00 AM MT - Audit + update DECISIONS.md
+- Mistral: 5:00-6:00 AM MT - Dry-run Scout role
+- Vibe: 6:00-7:00 AM MT - Consolidate day
 
 ---
 
 ## Agent Introductions
+
+### D-008
+- **Role**: Pipeline Engineer / Process Automator
+- **Specialties**: process-automation, workflow-design, documentation
+- **Last Active**: 2026-09-11T07:00:00Z
+- **Next Agent**: Nova
+- **Handoff Status**: 🔄 In Progress
+- **Notes**: Created docs/PIPELINE.md data model for Scout-Writer-Editor-Publisher pipeline. Added to rotation to assist with critical bootstrap tasks.
+- **Slack**: @D-008
 
 ### Abbey
 - **Role**: Coordinator / Human Facilitator
@@ -148,28 +158,19 @@ See **[comms/schedule.md](comms/schedule.md)** for the current agent rotation sc
 ### Orion
 - **Role**: Project Scout
 - **Specialties**: workflow-design, research, project-initialization
-- **Last Active**: [To be assigned]
+- **Last Active**: 2026-09-10T15:30:00Z
 - **Next Agent**: Aurora
-- **Handoff Status**: ⏳ Pending
-- **Notes**: Task: Draft docs/PROJECT_BRIEF.md with 2-3 candidate niches
+- **Handoff Status**: ✅ Complete
+- **Notes**: Created docs/PROJECT_BRIEF.md with 3 candidate niches
 - **Slack**: @Orion
-
-### rezurrector
-- **Role**: [To be assigned]
-- **Specialties**: [To be assigned]
-- **Last Active**: [To be assigned]
-- **Next Agent**: [To be assigned]
-- **Handoff Status**: ⏳ Pending
-- **Notes**: [To be assigned]
-- **Slack**: @rezurrector
 
 ### Aurora
 - **Role**: Style Guide Architect
 - **Specialties**: technical-writing, workflow-design, documentation
-- **Last Active**: [To be assigned]
+- **Last Active**: 2026-09-10T17:52:59Z
 - **Next Agent**: Nova
-- **Handoff Status**: ⏳ Pending
-- **Notes**: Task: Draft docs/STYLE_GUIDE.md skeleton
+- **Handoff Status**: ✅ Complete
+- **Notes**: Created docs/STYLE_GUIDE.md generic style guide
 - **Slack**: @Aurora
 
 ### Nova
@@ -177,8 +178,8 @@ See **[comms/schedule.md](comms/schedule.md)** for the current agent rotation sc
 - **Specialties**: system-architecture, workflow-design, automation
 - **Last Active**: [To be assigned]
 - **Next Agent**: Aegis
-- **Handoff Status**: ⏳ Pending
-- **Notes**: Task: Define pipeline data model in docs/PIPELINE.md
+- **Handoff Status**: ⚠️ REDO REQUIRED
+- **Notes**: Task: Verify and enhance docs/PIPELINE.md created by D-008
 - **Slack**: @Nova
 
 ### Aegis
@@ -187,7 +188,7 @@ See **[comms/schedule.md](comms/schedule.md)** for the current agent rotation sc
 - **Last Active**: [To be assigned]
 - **Next Agent**: Mistral
 - **Handoff Status**: ⏳ Pending
-- **Notes**: Task: Audit Orion/Aurora/Nova output, update DECISIONS.md
+- **Notes**: Task: Audit Orion/Aurora/Nova/D-008 output, update DECISIONS.md
 - **Slack**: @Aegis
 
 ### Mistral
@@ -196,7 +197,7 @@ See **[comms/schedule.md](comms/schedule.md)** for the current agent rotation sc
 - **Last Active**: [To be assigned]
 - **Next Agent**: Vibe
 - **Handoff Status**: ⏳ Pending
-- **Notes**: Task: Dry-run Scout role using Nova's queue format
+- **Notes**: Task: Dry-run Scout role using PIPELINE.md queue format
 - **Slack**: @Mistral
 
 ### Vibe
@@ -207,6 +208,15 @@ See **[comms/schedule.md](comms/schedule.md)** for the current agent rotation sc
 - **Handoff Status**: ⏳ Pending
 - **Notes**: Task: Consolidate day, prepare brief for Abbey
 - **Slack**: @Vibe
+
+### rezurrector
+- **Role**: [To be assigned]
+- **Specialties**: [To be assigned]
+- **Last Active**: [To be assigned]
+- **Next Agent**: [To be assigned]
+- **Handoff Status**: ⏳ Pending
+- **Notes**: [To be assigned]
+- **Slack**: @rezurrector
 
 ---
 
@@ -336,9 +346,9 @@ Use these standardized tags for your **Specialties** in README introductions:
 
 - **Created**: 2026-09-08
 - **Purpose**: Multi-agent workflow testing
-- **Status**: Bootstrap Day (2026-09-09)
-- **Agents**: 8 agents with unique names
-- **Handoffs**: 1+ handoff logs
+- **Status**: Bootstrap Day Continued (2026-09-11)
+- **Agents**: 9 agents with unique names
+- **Handoffs**: 7+ handoff logs
 - **Slack**: #multi-agent-handoff channel active
 
 ---
@@ -349,6 +359,6 @@ This repository is for internal testing and coordination purposes only.
 
 ---
 
-*Last updated: 2026-09-09T14:00:00Z*
+*Last updated: 2026-09-11T07:00:00Z*
 *Slack channel: #multi-agent-handoff*
 *Timezone: America/Denver (MT, UTC-6)*
