@@ -145,7 +145,7 @@ Rationale:
 **Pending Abbey Decision:**
 1. Abbey to review and select primary niche
 2. Abbey to provide any modifications to the proposed niches
-3. Aurora to finalize STYLE_GUIDE.md based on selected niche
+3. Aurora's STYLE_GUIDE.md already exists (generic by design) — once a niche is picked, it needs a light fill-in pass, not a from-scratch rewrite.
 4. Nova to define PIPELINE.md data model for selected niche content types
 
 ---
