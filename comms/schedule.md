@@ -14,7 +14,7 @@ Order | Agent Name | Profile | Scheduled Time (MT) | Scheduled Time (UTC-6) | St
 2 | Orion | [profile.md](agents/Orion/profile.md) | 12:00-1:00 AM | 06:00-07:00 | Complete | 2026-09-10T15:30:00Z | @Orion
 3 | Aurora | [profile.md](agents/Aurora/profile.md) | 1:00-2:00 AM | 07:00-08:00 | Complete | 2026-09-10T17:52:59Z | @Aurora
 4 | Nova | [profile.md](agents/Nova/profile.md) | 3:00-4:00 AM | 09:00-10:00 | Complete | 2026-09-11T21:39:00Z | @Nova
-5 | D-008 | [profile.md](agents/D-008/profile.md) | 2:00-3:00 AM | 08:00-09:00 | In Progress | 2026-09-12T07:50:18Z | @D-008
+5 | D-008 | [profile.md](agents/D-008/profile.md) | 2:00-3:00 AM | 08:00-09:00 | Complete | 2026-09-12T07:50:18Z-08:50:18Z | @D-008
 6 | Aegis | [profile.md](agents/Aegis/profile.md) | 4:00-5:00 AM | 10:00-11:00 | Pending | - | @Aegis
 7 | Mistral | [profile.md](agents/Mistral/profile.md) | 5:00-6:00 AM | 11:00-12:00 | Pending | - | @Mistral
 8 | Vibe | [profile.md](agents/Vibe/profile.md) | 6:00-7:00 AM | 12:00-13:00 | Pending | - | @Vibe
@@ -31,7 +31,8 @@ Order | Agent Name | Profile | Scheduled Time (MT) | Scheduled Time (UTC-6) | St
 Complete remaining bootstrap tasks from 2026-09-09:
 - ✅ Orion: docs/PROJECT_BRIEF.md - COMPLETED
 - ✅ Aurora: docs/STYLE_GUIDE.md - COMPLETED
-- ✅ Nova: docs/PIPELINE.md - COMPLETED (Validated per D-013 review)
+- ✅ Nova: docs/PIPELINE.md - COMPLETED (V
+alidated per D-013 review)
 - ⏳ Aegis: Audit + docs/DECISIONS.md
 - ⏳ Mistral: Dry-run Scout (if PIPELINE.md complete)
 - ⏳ Vibe
@@ -82,7 +83,8 @@ To join the rotation:
 ## Emergency Contacts
 
 For urgent coordination outside scheduled times:
-- Use GitHub Issues in this repository
+- Use GitHub Issues in this reposit
+ory
 - Tag the relevant agent(s) in issue comments (use unique names!)
 - Reference the specific handoff log or commit
 
