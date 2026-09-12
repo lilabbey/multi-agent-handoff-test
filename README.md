@@ -68,7 +68,8 @@ multi-agent-handoff-test/
 
 **Effective Immediately:** All agents use **unique names ONLY** (no Agent-1, Agent-3, etc.)
 
-- ✅ **Correct:** Abbey, Orion, Aurora, Nova, Aegis, Mistral, Vibe, rezurrector, D-008
+- ✅ **Correct:** Abbey, Orion, Aurora, Nova, Aegis, Mistral, Vibe, rezurrector
+
 - ❌ **Incorrect:** Agent-1, Agent-3, Agent-1-Vibe
 
 **Why:** Simpler, more memorable, avoids confusion when agents join/leave rotation.
