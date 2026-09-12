@@ -7,140 +7,99 @@ This document tracks all unresolved questions, opinions, and discussions from ag
 
 ## How to Use This Document
 
-1. **Add questions** when you encounter ambiguity
-2. **Propose options** for each question
-3. **Mark status** (Open / In Discussion / Resolved)
-4. **Record resolution** when decided
-5. **Move resolved** items to DECISIONS.md
+1. Add questions when you encounter ambiguity
+2. Propose options for each question
+3. Mark status (Open / In Discussion / Resolved)
+4. Record resolution when decided
+5. Move resolved items to DECISIONS.md
+
+---
+
+## Resolved Questions (Moved to DECISIONS.md)
+
+The following questions have been resolved and documented in DECISIONS.md:
+
+### Naming Conventions
+- Q1: Agent Naming Standard -> RESOLVED by D-008 (Use unique names without numeric prefixes)
+- Q2: Agent ID in Directories -> RESOLVED by D-001 (agents/[Unique-Name]/profile.md)
+
+### Workflow Rules
+- Q4: Handoff Frequency -> RESOLVED by D-004 (One handoff log per session)
+- Q5: README Update Requirement -> RESOLVED by D-003 (MANDATORY for all agents)
+- Q6: Schedule Update Timing -> RESOLVED by D-006 (Update at start and end of each session)
+
+### Documentation Standards
+- Q7: Markdown Formatting -> RESOLVED by D-004 (Per-session logs, standardized format)
+- Q8: ASCII Art in README -> RESOLVED by D-005 (Use code blocks for consistent rendering)
+
+### Technical Decisions
+- Q10: Commit Squashing -> RESOLVED by D-002 (Use Conventional Commits specification)
+
+### Specialty Tags
+- Q3: Specialty Tags -> RESOLVED by D-007 (Use 2-3 comma-separated keywords from predefined list)
+
+### Branch Strategy
+- Q9: Branch Strategy -> RESOLVED by repository rules (Changes must be made through pull requests)
+  - Current practice: Create feature branches, use PRs to main
 
 ---
 
 ## Open Questions
 
-### Naming Conventions
+### Bootstrap Phase
 
-#### Q1: Agent Naming Standard
-- **Q**: Should agents use `Agent-[Number]-[Name]` or `[Name]-Agent-[Number]` format?
-  - **Context**: Current repo has inconsistent naming
-  - **Options**:
-    - A) `Agent-1-Vibe` (Number first)
-    - B) `Vibe-Agent-1` (Name first)
-    - C) `vibe-agent-1` (All lowercase)
-    - D) Free form with guidelines
-  - **Proposed By**: Vibe
-  - **Status**: Open
+#### Q11: Niche Selection
+- Q: Which of the 3 proposed niches should be selected as primary?
+  - Context: Orion created PROJECT_BRIEF.md with 3 candidates, awaiting Abbey decision
+  - Options:
+    - A) Niche 1: AI Agent Development and Workflow Automation
+    - B) Niche 2: Sustainable Open-Source Business Models
+    - C) Niche 3: Developer Productivity and Workflow Optimization
+  - Recommendation: Niche 1 (best alignment with team expertise)
+  - Proposed By: D-008
+  - Status: Open - Awaiting Abbey decision
 
-#### Q2: Agent ID in Directories
-- **Q**: Should agent profile directories use full ID (`Agent-1-Vibe/`) or just number (`agent-1/`)?
-  - **Context**: Current structure uses `agents/agent-1/`
-  - **Options**:
-    - A) Full ID: `agents/Agent-1-Vibe/`
-    - B) Number only: `agents/agent-1/`
-    - C) Name only: `agents/vibe/`
-  - **Proposed By**: Vibe
-  - **Status**: Open
+#### Q12: STYLE_GUIDE.md Finalization
+- Q: Should STYLE_GUIDE.md remain generic or be adapted for the selected niche?
+  - Context: Aurora created generic style guide, needs niche-specific adaptations
+  - Options:
+    - A) Keep generic (adaptable to any niche)
+    - B) Adapt for selected niche
+    - C) Create niche-specific version
+  - Proposed By: D-008
+  - Status: Open - Depends on Q11 (niche selection)
 
-#### Q3: Specialty Tags
-- **Q**: Should agents define their own specialties or choose from predefined list?
-  - **Context**: Agents had different specialty formats
-  - **Options**:
-    - A) Free form text
-    - B) Predefined tags from list
-    - C) Both (free form + tags)
-  - **Proposed By**: Vibe
-  - **Status**: Open
+### D-013 Compliance
 
-### Workflow Rules
-
-#### Q4: Handoff Frequency
-- **Q**: How often should agents create handoff logs?
-  - **Context**: Some per task, others per session
-  - **Options**:
-    - A) Per session
-    - B) Per task
-    - C) Per commit
-    - D) Agent discretion
-  - **Proposed By**: Vibe
-  - **Status**: Open
-
-#### Q5: README Update Requirement
-- **Q**: Should updating README.md with agent introduction be mandatory?
-  - **Context**: Only some agents updated README.md in test
-  - **Options**:
-    - A) Mandatory for all
-    - B) Optional but encouraged
-    - C) Only for new agents
-  - **Proposed By**: Vibe
-  - **Status**: Open
-
-#### Q6: Schedule Update Timing
-- **Q**: When should agents update the schedule?
-  - **Context**: Schedule updates were inconsistent
-  - **Options**:
-    - A) Before starting
-    - B) After completing
-    - C) Both
-    - D) Only when joining/leaving
-  - **Proposed By**: Vibe
-  - **Status**: Open
-
-### Documentation Standards
-
-#### Q7: Markdown Formatting
-- **Q**: Should we enforce strict markdown formatting?
-  - **Context**: Different formatting styles in handoff logs
-  - **Options**:
-    - A) Strict template enforcement
-    - B) Guidelines but flexible
-    - C) Free form
-  - **Proposed By**: Vibe
-  - **Status**: Open
-
-#### Q8: ASCII Art in README
-- **Q**: Should README use ASCII art or plain text for structure?
-  - **Context**: Current ASCII tree not rendering correctly
-  - **Options**:
-    - A) Keep ASCII (fix rendering)
-    - B) Use plain text list
-    - C) Use Mermaid diagram
-    - D) Remove diagram
-  - **Proposed By**: Vibe
-  - **Status**: Open
-
-### Technical Decisions
-
-#### Q9: Branch Strategy
-- **Q**: Should we use main branch only or feature branches?
-  - **Context**: All work currently on main
-  - **Options**:
-    - A) Main branch only
-    - B) Feature branches
-    - C) Agent-specific branches
-  - **Proposed By**: Vibe
-  - **Status**: Open
-
-#### Q10: Commit Squashing
-- **Q**: Should we squash commits or keep all individual commits?
-  - **Context**: Multiple small commits vs clean history
-  - **Options**:
-    - A) Keep all commits
-    - B) Squash into logical groups
-    - C) Squash per agent session
-  - **Proposed By**: Vibe
-  - **Status**: Open
+#### Q13: Documentation File Validation
+- Q: Should the retained documentation files from D-008 sessions be treated as validated?
+  - Context: D-013 states files were created out-of-scope and need review/reassignment
+  - Files: TESTING.md, PIPELINE_VALIDATION.md, AUDIT_CHECKLIST.md, QUICK_REFERENCE.md, BOOTSTRAP_SUMMARY.md
+  - Options:
+    - A) Treat as validated (ready for use)
+    - B) Require review by intended owners
+    - C) Require complete rewrite by intended owners
+  - Proposed By: D-008
+  - Status: Open
 
 ---
 
 ## Agent Opinions and Feedback
 
 ### Workflow Preferences
-- **Agent-1-Vibe**: Prefers systematic, documentation-first approach. Likes comprehensive handoff logs.
+- D-008: Prefers systematic, documentation-first approach. Focused on unblocking critical path.
+- Vibe: Prefers systematic, documentation-first approach. Likes comprehensive handoff logs.
 
-### Pain Points from Test
-- **Agent-1-Vibe**: ASCII tree in README not readable in some viewers. Need better formatting.
+### Pain Points
+- D-008: D-013 regression created uncertainty about file validation status.
+- Vibe: ASCII tree in README not readable in some viewers.
 
 ### Suggestions for Improvement
-- **Agent-1-Vibe**:
+- D-008:
+  - Ensure all decisions are clearly documented in DECISIONS.md
+  - Maintain clear critical path visibility
+  - Use conventional commits consistently
+- Vibe:
   - Add conventional commit guidelines
   - Create decision log for tracking
   - Standardize agent profile format
@@ -148,22 +107,21 @@ This document tracks all unresolved questions, opinions, and discussions from ag
 ---
 
 ## Decision Log Reference
-For resolved questions, see: `DECISIONS.md`
+For resolved questions, see: DECISIONS.md
+For graduation criteria, see: GRADUATION.md
 
 ---
 
 ## Template for New Questions
 
-```markdown
 #### Q[Number]: [Brief Question]
-- **Q**: [Detailed question]
-  - **Context**: [Why this matters]
-  - **Options**:
+- Q: [Detailed question]
+  - Context: [Why this matters]
+  - Options:
     - A) [Option 1]
     - B) [Option 2]
-  - **Proposed By**: [Agent ID]
-  - **Status**: Open
-```
+  - Proposed By: [Agent Name]
+  - Status: Open
 
 ---
-*Last updated: 2026-09-08T19:30:00Z*
+*Last updated: 2026-09-12T09:35:00Z*
