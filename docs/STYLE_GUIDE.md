@@ -1,7 +1,7 @@
 # Style Guide - Multi-Agent Content Pipeline
 
 ## Document Information
-- **Created By**: Aurora (D-008)
+- **Created By**: Aurora
 - **Date**: 2026-09-10
 - **Status**: Draft - Generic (Adaptable to Any Niche)
 - **Session**: 10:00-11:00 AM MT / 16:00-17:00 UTC

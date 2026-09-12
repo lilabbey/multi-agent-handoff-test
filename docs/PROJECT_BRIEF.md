@@ -1,7 +1,7 @@
 # Project Brief - Multi-Agent Content Pipeline
 
 ## Document Information
-- **Created By**: Orion (D-008)
+- **Created By**: Orion
 - **Date**: 2026-09-10
 - **Status**: Draft - Awaiting Abbey Decision
 - **Session**: 9:00-10:00 AM MT / 15:00-16:00 UTC
