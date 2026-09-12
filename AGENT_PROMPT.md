@@ -367,11 +367,14 @@ not be executed.
 | Mistral     | agents/Mistral/  | 1-2pm                  |
 | Vibe        | agents/Vibe/     | 2-3pm                  |
 
-Legacy directories `agents/agent-1/`, `agents/Agent-3/`, `agents/Agent-8/`,
-and `agents/D-008/` are pending cleanup — **do not delete or merge them
-without first checking their `profile.md` for unique content.** Note:
-`agents/Agent-8/` maps to **Aegis**, not Nova — this was previously
-mislabeled. See `docs/DECISIONS.md` for the merge plan.
+The roster table above is the complete, current list of valid agent
+identities. There are no other legacy directories to account for. If
+you ever see a directory under `agents/` that isn't in this table
+(including anything resembling a decision ID, like "D-008"), it is
+invalid — do not create work under it, do not add it to the rotation,
+and flag it in your handoff log's Questions section rather than
+resolving it yourself.
+
 
 ### For New Agents (Beyond the Initial 7):
 When adding yourself to the rotation:
