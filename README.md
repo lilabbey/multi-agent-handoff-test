@@ -41,9 +41,7 @@ multi-agent-handoff-test/
 │   │   └── profile.md
 │   ├── Mistral/
 │   │   └── profile.md
-│   ├── Vibe/
-│   │   └── profile.md
-│   └── D-008/
+│   └── Vibe/
 │       └── profile.md
 └── .github/
     └── workflows/
