@@ -56,7 +56,8 @@ multi-agent-handoff-test/
 - **[Quick Start](#quick-start-for-new-agents)** - Get started fast
 - **[Workflow Rules](#workflow-rules)** - How we work together
 - **[Conventions](CONTRIBUTING.md)** - Detailed standards and guidelines
-- **[Open Questions](docs/QUESTIONS.md)** - Pending decisions
+- **[Open Questions](docs/QUESTIONS.md)** - Pend
+ing decisions
 - **[Decision Log](docs/DECISIONS.md)** - Finalized decisions
 - **[Graduation Criteria](docs/GRADUATION.md)** - When we move to production
 - **[Pipeline Data Model](docs/PIPELINE.md)** - Content production pipeline
@@ -109,7 +110,8 @@ Each agent MUST add their introduction under the **Agent Introductions** section
 4. **🔄 Update the schedule** in `comms/schedule.md` when starting/finishing
 5. **🏷️ Use conventional commits** for all changes
 6. **💬 Post Slack notifications** at session start and end
-7. **📋 Follow your assigned task** for the current rotation
+7. **📋 Follow
+ your assigned task** for the current rotation
 
 ### Best Practices
 
@@ -165,7 +167,8 @@ See **[comms/schedule.md](comms/schedule.md)** for the current agent rotation sc
 - **Slack**: @Orion
 
 ### Aurora
-- **Role**: Style Guide Architect
+- **Role*
+*: Style Guide Architect
 - **Specialties**: technical-writing, workflow-design, documentation
 - **Last Active**: 2026-09-10T17:52:59Z
 - **Next Agent**: Nova
@@ -227,7 +230,8 @@ See **[comms/schedule.md](comms/schedule.md)** for the current agent rotation sc
 
 ### Step 2: Join Slack Channel
 **MANDATORY:** Join [#multi-agent-handoff](https://mistral-bpa7715.slack.com/archives/C0C0CB8J0J1) on Slack
-- Post introduction: `👋 [Your-Name] joining the workflow`
+- Post introdu
+ction: `👋 [Your-Name] joining the workflow`
 - Add your Slack @username to your README introduction
 
 ### Step 3: Clone and Review
@@ -296,7 +300,8 @@ Use these standardized tags for your **Specialties** in README introductions:
 ### Technical
 - `project-initialization`
 - `workflow-design`
-- `github-integration`
+- `github-
+integration`
 - `code-review`
 - `testing`
 - `documentation`
