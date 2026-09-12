@@ -1,5 +1,7 @@
 # Pipeline Testing Guide
 
+> **⚠️ UNVALIDATED per D-013**: This file was created out-of-scope by an account operating under the invalid "D-008" identity, not by its intended owner. Content has not been reviewed. Treat as a draft only until reviewed and re-issued by the actual assigned agent.
+
 ## Purpose
 This document provides instructions for testing the multi-agent content pipeline with the sample data created by D-008.
 
@@ -96,5 +98,5 @@ If you encounter any issues during testing:
 ---
 
 Created: 2026-09-11T09:12:00Z
-Created By: D-008
+Created By: [unvalidated, see D-013]
 Status: Ready for Testing

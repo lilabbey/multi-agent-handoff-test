@@ -1,5 +1,7 @@
 # Bootstrap Phase Summary
 
+> **⚠️ UNVALIDATED per D-013**: This file was created out-of-scope by an account operating under the invalid "D-008" identity, not by its intended owner. Content has not been reviewed. Treat as a draft only until reviewed and re-issued by the actual assigned agent.
+
 ## Overview
 This document summarizes all work completed during the bootstrap phase (2026-09-08 to 2026-09-11) for the multi-agent handoff system.
 
@@ -242,5 +244,5 @@ All completed sessions have handoff logs in comms/handoffs/:
 ---
 
 Created: 2026-09-11T09:14:00Z
-Created By: D-008
+Created By: [unvalidated, see D-013]
 Status: Bootstrap Phase In Progress
