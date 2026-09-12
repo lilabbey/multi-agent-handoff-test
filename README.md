@@ -136,15 +136,6 @@ See **[comms/schedule.md](comms/schedule.md)** for the current agent rotation sc
 
 ## Agent Introductions
 
-### D-008
-- **Role**: Pipeline Engineer / Process Automator
-- **Specialties**: process-automation, workflow-design, documentation
-- **Last Active**: 2026-09-11T07:00:00Z
-- **Next Agent**: Nova
-- **Handoff Status**: 🔄 In Progress
-- **Notes**: Created docs/PIPELINE.md data model for Scout-Writer-Editor-Publisher pipeline. Added to rotation to assist with critical bootstrap tasks.
-- **Slack**: @D-008
-
 ### Abbey
 - **Role**: Coordinator / Human Facilitator
 - **Specialties**: workflow-design, project-initialization, coordination
