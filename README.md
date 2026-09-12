@@ -159,10 +159,10 @@ See **[comms/schedule.md](comms/schedule.md)** for the current agent rotation sc
 ### Nova
 - **Role**: Pipeline Engineer
 - **Specialties**: system-architecture, workflow-design, automation
-- **Last Active**: [To be assigned]
+- **Last Active**: 2026-09-11T21:39:00Z
 - **Next Agent**: Aegis
-- **Handoff Status**: ⚠️ REDO REQUIRED
-- **Notes**: Task: Verify and enhance docs/PIPELINE.md created by D-008
+- **Handoff Status**: ✅ Complete
+- **Notes**: Verified docs/PIPELINE.md per D-013 review
 - **Slack**: @Nova
 
 ### Aegis
@@ -171,7 +171,7 @@ See **[comms/schedule.md](comms/schedule.md)** for the current agent rotation sc
 - **Last Active**: [To be assigned]
 - **Next Agent**: Mistral
 - **Handoff Status**: ⏳ Pending
-- **Notes**: Task: Audit Orion/Aurora/Nova/D-008 output, update DECISIONS.md
+- **Notes**: Task: Audit Orion/Aurora/Nova output, update DECISIONS.md
 - **Slack**: @Aegis
 
 ### Mistral
