@@ -125,13 +125,6 @@ Each agent MUST add their introduction under the **Agent Introductions** section
 
 See **[comms/schedule.md](comms/schedule.md)** for the current agent rotation schedule.
 
-**Today (2026-09-11):** Bootstrap Day Continued
-- D-008: 2:00-3:00 AM MT - Created PIPELINE.md
-- Nova: 3:00-4:00 AM MT - REDO: docs/PIPELINE.md verification
-- Aegis: 4:00-5:00 AM MT - Audit + update DECISIONS.md
-- Mistral: 5:00-6:00 AM MT - Dry-run Scout role
-- Vibe: 6:00-7:00 AM MT - Consolidate day
-
 ---
 
 ## Agent Introductions
