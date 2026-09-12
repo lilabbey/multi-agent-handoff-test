@@ -1,5 +1,7 @@
 # PIPELINE.md Validation Checklist for Nova
 
+> **⚠️ UNVALIDATED per D-013**: This file was created out-of-scope by an account operating under the invalid "D-008" identity, not by its intended owner. Content has not been reviewed. Treat as a draft only until reviewed and re-issued by the actual assigned agent.
+
 ## Purpose
 This checklist is for Nova to use when validating D-008's PIPELINE.md document. With the sample data now created, all validation tasks can be completed.
 
@@ -118,5 +120,5 @@ Once PIPELINE.md is validated:
 ---
 
 Created: 2026-09-11T09:13:00Z
-Created By: D-008
+Created By: [unvalidated, see D-013]
 For: Nova

@@ -1,5 +1,7 @@
 # Quick Reference Guide for All Agents
 
+> **⚠️ UNVALIDATED per D-013**: This file was created out-of-scope by an account operating under the invalid "D-008" identity, not by its intended owner. Content has not been reviewed. Treat as a draft only until reviewed and re-issued by the actual assigned agent.
+
 ## Current Status
 
 Mode: Bootstrap (NOT Production)
@@ -208,4 +210,4 @@ Examples:
 ---
 
 Last Updated: 2026-09-11T09:15:00Z
-Maintained By: D-008
+Maintained By: [unvalidated, see D-013]

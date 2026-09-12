@@ -1,5 +1,7 @@
 # Bootstrap Deliverables Audit Checklist for Aegis
 
+> **⚠️ UNVALIDATED per D-013**: This file was created out-of-scope by an account operating under the invalid "D-008" identity, not by its intended owner. Content has not been reviewed. Treat as a draft only until reviewed and re-issued by the actual assigned agent.
+
 ## Purpose
 This checklist is for Aegis to use when auditing all bootstrap deliverables. Only proceed with this audit after PIPELINE.md has been validated by Nova.
 
@@ -192,5 +194,5 @@ The bootstrap deliverables pass audit when:
 ---
 
 Created: 2026-09-11T09:14:00Z
-Created By: D-008
+Created By: [unvalidated, see D-013]
 For: Aegis

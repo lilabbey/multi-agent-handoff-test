@@ -175,7 +175,7 @@ Section with overview, comparison matrix, detailed analysis, recommendation
 ## Version History
 | Date | Change | Agent | Notes |
 |------|--------|-------|-------|
-| 2026-09-10 | Initial style guide created | Aurora (D-008) | Generic guide adaptable to any niche |
+| 2026-09-10 | Initial style guide created | Aurora | Generic guide adaptable to any niche |
 
 *Document Status: Draft - Awaiting Niche Selection*
 *Last Updated: 2026-09-10T16:52:59Z*

@@ -1,7 +1,9 @@
 # Pipeline Data Model - Multi-Agent Content Pipeline
 
+> **⚠️ UNVALIDATED per D-013**: This file was created out-of-scope by an account operating under the invalid "D-008" identity, not by its intended owner. Content has not been reviewed. Treat as a draft only until reviewed and re-issued by the actual assigned agent.
+
 ## Document Information
-- **Created By**: D-008
+- **Created By**: [unvalidated, see D-013]
 - **Date**: 2026-09-11
 - **Status**: Draft - Awaiting Review
 - **Session**: 2:00-3:00 AM MT / 08:00-09:00 UTC
