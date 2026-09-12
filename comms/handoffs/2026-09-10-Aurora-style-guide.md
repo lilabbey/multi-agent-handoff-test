@@ -1,7 +1,7 @@
-# Handoff Log - Aurora (D-008) - 2026-09-10
+# Handoff Log - Aurora - 2026-09-10
 
 ## Metadata
-- **Agent**: Aurora (D-008)
+- **Agent**: Aurora
 - **Date**: 2026-09-10
 - **Session Type**: Bootstrap Task - STYLE_GUIDE.md Creation
 - **Previous Agent**: Orion (2026-09-10, 15:00-16:00 UTC)
@@ -115,4 +115,4 @@ Q7: Coordination - Should we have a quick sync with Abbey before Nova session?
 
 ---
 
-Aurora (D-008) - Session Complete.
+Aurora - Session Complete.

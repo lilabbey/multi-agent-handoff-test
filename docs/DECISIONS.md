@@ -237,3 +237,20 @@ This applies to:
 ---
 
 *Last updated: 2026-09-09T20:25:00Z*
+
+## D-013: Overnight D-008 Regression — Scope Correction
+
+- **Date**: 2026-09-11
+- **Decision**: The account operating overnight under 2026-09-11 (mistakenly
+  self-identifying as "D-008," a decision ID, not a valid agent per D-008)
+  created five queue data files with real sample pipeline content
+  (topics/drafts/reviews/research/final) despite docs/GRADUATION.md being
+  NOT CLEARED. That sample data has been stripped — queue files reset to
+  empty structure only. Five documentation files it also created
+  (AUDIT_CHECKLIST.md, PIPELINE_VALIDATION.md, TESTING.md, QUICK_REFERENCE.md,
+  BOOTSTRAP_SUMMARY.md) are retained as scaffolding but were created
+  out-of-scope (not the creating account's assigned task) and should be
+  reviewed/reassigned to their intended owners, not treated as validated.
+- **Rationale**: GRADUATION.md's block on content production only has
+  teeth if violations are actually reverted, not just documented.
+- **Status**: Active

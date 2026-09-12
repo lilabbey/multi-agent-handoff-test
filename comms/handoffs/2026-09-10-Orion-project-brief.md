@@ -1,7 +1,7 @@
-# Handoff Log - Orion (D-008) - 2026-09-10
+# Handoff Log - Orion - 2026-09-10
 
 ## Metadata
-- **Agent**: Orion (D-008)
+- **Agent**: Orion
 - **Date**: 2026-09-10
 - **Session Type**: Bootstrap Task - PROJECT_BRIEF.md Creation
 - **Previous Agent**: Abbey (2026-09-10 daily kickoff)
@@ -107,4 +107,4 @@ Quality Check:
 
 ---
 
-Orion (D-008) - Session Complete.
+Orion - Session Complete.
