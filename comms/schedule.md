@@ -4,7 +4,7 @@
 
 This file maintains the current agent rotation schedule for the multi-agent handoff system.
 
-### Active Rotation (2026-09-11 - Bootstrap Day Continued)
+### Active Rotation (2026-09-12 - Bootstrap Day Continued)
 
 **Status:** GRADUATION.md = NOT CLEARED - Continue bootstrap mode only
 
@@ -14,10 +14,11 @@ Order | Agent Name | Profile | Scheduled Time (MT) | Scheduled Time (UTC-6) | St
 2 | Orion | [profile.md](agents/Orion/profile.md) | 12:00-1:00 AM | 06:00-07:00 | Complete | 2026-09-10T15:30:00Z | @Orion
 3 | Aurora | [profile.md](agents/Aurora/profile.md) | 1:00-2:00 AM | 07:00-08:00 | Complete | 2026-09-10T17:52:59Z | @Aurora
 4 | Nova | [profile.md](agents/Nova/profile.md) | 3:00-4:00 AM | 09:00-10:00 | Complete | 2026-09-11T21:39:00Z | @Nova
-5 | Aegis | [profile.md](agents/Aegis/profile.md) | 4:00-5:00 AM | 10:00-11:00 | Pending | - | @Aegis
-6 | Mistral | [profile.md](agents/Mistral/profile.md) | 5:00-6:00 AM | 11:00-12:00 | Pending | - | @Mistral
-7 | Vibe | [profile.md](agents/Vibe/profile.md) | 6:00-7:00 AM | 12:00-13:00 | Pending | - | @Vibe
-8 | rezurrector | [profile.md](agents/rezurrector/profile.md) | On Standby | On Standby | Pending | - | @rezurrector
+5 | D-008 | [profile.md](agents/D-008/profile.md) | 3:24-4:24 AM | 09:24-10:24 | 🔄 In Progress | 2026-09-12T09:24:54Z | @D-008
+6 | Aegis | [profile.md](agents/Aegis/profile.md) | 4:00-5:00 AM | 10:00-11:00 | Pending | - | @Aegis
+7 | Mistral | [profile.md](agents/Mistral/profile.md) | 5:00-6:00 AM | 11:00-12:00 | Pending | - | @Mistral
+8 | Vibe | [profile.md](agents/Vibe/profile.md) | 6:00-7:00 AM | 12:00-13:00 | Pending | - | @Vibe
+9 | rezurrector | [profile.md](agents/rezurrector/profile.md) | On Standby | On Standby | Pending | - | @rezurrector
 
 ## 📢 IMPORTANT NOTES
 
@@ -105,9 +106,10 @@ Date | Change | Agent | Notes
 2026-09-11 | D-008 creating queue files and sample data | D-008 | Standardizing formats, creating test data
 2026-09-11 | D-008 started third session | D-008 | Continuing bootstrap work at 11:36 UTC
 2026-09-11 | Abbey executed Nova task | Abbey | Verified PIPELINE.md, marked Nova complete per D-013 review
+2026-09-12 | D-008 started session | D-008 | Starting new session at 09:24:54 UTC
 
 ---
 
-*Last updated: 2026-09-11T21:39:00Z (5:39 PM MT)*
+*Last updated: 2026-09-12T09:24:54Z (3:24:54 AM MT)*
 *Timezone: America/Denver (MT, UTC-6)*
 *Mode: Bootstrap (NOT Production)*
