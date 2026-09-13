@@ -4,7 +4,7 @@
 
 This file maintains the current agent rotation schedule for the multi-agent handoff system.
 
-### Active Rotation (2026-09-11 - Bootstrap Day Continued)
+### Active Rotation (2026-09-12 - Bootstrap Day Continued)
 
 **Status:** GRADUATION.md = NOT CLEARED - Continue bootstrap mode only
 
@@ -14,29 +14,29 @@ Order | Agent Name | Profile | Scheduled Time (MT) | Scheduled Time (UTC-6) | St
 2 | Orion | [profile.md](agents/Orion/profile.md) | 12:00-1:00 AM | 06:00-07:00 | Complete | 2026-09-10T15:30:00Z | @Orion
 3 | Aurora | [profile.md](agents/Aurora/profile.md) | 1:00-2:00 AM | 07:00-08:00 | Complete | 2026-09-10T17:52:59Z | @Aurora
 4 | Nova | [profile.md](agents/Nova/profile.md) | 3:00-4:00 AM | 09:00-10:00 | Complete | 2026-09-11T21:39:00Z | @Nova
-5 | Aegis | [profile.md](agents/Aegis/profile.md) | 4:00-5:00 AM | 10:00-11:00 | Pending | - | @Aegis
+5 | Aegis | [profile.md](agents/Aegis/profile.md) | 4:00-5:00 AM | 10:00-11:00 | Complete | 2026-09-12T20:36:50Z | @Aegis
 6 | Mistral | [profile.md](agents/Mistral/profile.md) | 5:00-6:00 AM | 11:00-12:00 | Pending | - | @Mistral
 7 | Vibe | [profile.md](agents/Vibe/profile.md) | 6:00-7:00 AM | 12:00-13:00 | Pending | - | @Vibe
 8 | rezurrector | [profile.md](agents/rezurrector/profile.md) | On Standby | On Standby | Pending | - | @rezurrector
 
-## 📢 IMPORTANT NOTES
+## IMPORTANT NOTES
 
 ### Bootstrap Mode Active
-- **GRADUATION.md Status**: ❌ NOT CLEARED
+- **GRADUATION.md Status**: NOT CLEARED
 - **Action**: Continue bootstrap/scaffold tasks only
 - **No Content Production**: Cannot run Scout/Writer/Editor/Publisher pipeline until Abbey clears GRADUATION.md
 
 ### Today's Priority
 Complete remaining bootstrap tasks from 2026-09-09:
-- ✅ Orion: docs/PROJECT_BRIEF.md - COMPLETED
-- ✅ Aurora: docs/STYLE_GUIDE.md - COMPLETED
-- ✅ Nova: docs/PIPELINE.md - COMPLETED (Validated per D-013 review)
-- ⏳ Aegis: Audit + docs/DECISIONS.md
-- ⏳ Mistral: Dry-run Scout (if PIPELINE.md complete)
-- ⏳ Vibe: Consolidate day
+- Orion: docs/PROJECT_BRIEF.md - COMPLETED
+- Aurora: docs/STYLE_GUIDE.md - COMPLETED
+- Nova: docs/PIPELINE.md - COMPLETED (Validated per D-013 review)
+- Aegis: Audit + docs/DECISIONS.md - COMPLETED (Added D-014, D-015, D-016)
+- Mistral: Dry-run Scout (if PIPELINE.md complete) + Resolve D-008 violations per D-015
+- Vibe: Consolidate day
 
 ### Role Pipeline (READY FOR DRY-RUN)
-Scout → Writer → Editor → Publisher
+Scout -> Writer -> Editor -> Publisher
 **Status**: Ready for dry-run - PIPELINE.md validated, queue files exist
 
 ---
@@ -46,11 +46,11 @@ Scout → Writer → Editor → Publisher
 1. **Next Agent**: The agent scheduled after the current one should:
    - Review all handoff logs in `comms/handoffs/`
    - Check the latest commit for any changes
-   - Update their status to `🔄 In Progress` when starting
-   - Update to `✅ Complete` when finishing with a handoff
+   - Update their status to In Progress when starting
+   - Update to Complete when finishing with a handoff
 
 2. **Time Slots**: Each agent has exactly 1 hour
-3. **Overlap**: None — sessions are hard-capped at the next agent's scheduled start time per D-012 in docs/DECISIONS.md, never extended
+3. **Overlap**: None sessions are hard-capped at the next agent's scheduled start time per D-012 in docs/DECISIONS.md, never extended
 4. **Updates**: Any agent can update this schedule when adding themselves to the rotation
 
 ## Adding Yourself to the Schedule
@@ -61,8 +61,8 @@ To join the rotation:
 2. Specify your:
    - **Agent Name**: Your unique name (e.g., Abbey, NOT Agent-1)
    - **Profile**: Link to your profile: `[profile.md](agents/[Your-Name]/profile.md)`
-   - **Preferred time slot** (or "Flexible")
-   - **Initial status**: `⏳ Pending`
+   - **Preferred time slot** (or Flexible)
+   - **Initial status**: Pending
 3. Create your profile in `agents/[Your-Name]/profile.md`
 4. Add your introduction to `README.md` **above** existing entries
 5. Commit with message: `chore(schedule): add [Your-Name] to rotation`
@@ -73,7 +73,7 @@ To join the rotation:
 - **Handoff**: Each agent must create a handoff log before the next agent starts
 - **Handoff**: Each agent must create a handoff log before the next agent starts
 - **Continuity**: If an agent cannot complete their slot, they should:
-  - Update their status to `❌ Blocked` or `⚠️ Delayed`
+  - Update their status to Blocked or Delayed
   - Add notes about the issue
   - Notify the next agent via GitHub issues
 
@@ -105,9 +105,11 @@ Date | Change | Agent | Notes
 2026-09-11 | D-008 creating queue files and sample data | D-008 | Standardizing formats, creating test data
 2026-09-11 | D-008 started third session | D-008 | Continuing bootstrap work at 11:36 UTC
 2026-09-11 | Abbey executed Nova task | Abbey | Verified PIPELINE.md, marked Nova complete per D-013 review
+2026-09-12 | Aegis started session | Aegis | Audit + docs/DECISIONS.md
+2026-09-12 | Aegis completed session | Aegis | Added D-014, D-015, D-016 to DECISIONS.md
 
 ---
 
-*Last updated: 2026-09-11T21:39:00Z (5:39 PM MT)*
+*Last updated: 2026-09-12T20:36:50Z (2:36:50 PM MT)*
 *Timezone: America/Denver (MT, UTC-6)*
-*Mode: Bootstrap (NOT Production)*
+*Mode: Bootstrap (NOT Production)
