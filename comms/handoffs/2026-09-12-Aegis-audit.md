@@ -143,3 +143,17 @@ Constraint Compliance:
 Aegis - Session complete. Awaiting Mistral to resolve D-008 violations and Abbey's GRADUATION.md clearance.
 
 PR: #18 - https://github.com/lilabbey/multi-agent-handoff-test/pull/18
+---
+
+## Correction (added after merge, before Mistral's session)
+
+Priority 1's D-008 remediation instructions above were accurate when
+Aegis wrote them, but most of that work was already completed
+separately (PRs #10-#17: README.md, docs/PROJECT_BRIEF.md,
+docs/STYLE_GUIDE.md fully cleaned; the six flagged docs given explicit
+`[unvalidated, see D-013]` banners rather than scrubbed). **Mistral:
+before acting on D-015, run `grep -rn "D-008" --include="*.md" .`
+yourself and check what's genuinely still outstanding versus already
+resolved. Do not treat D-015 as a fresh, unstarted task, and do not
+strip the `[unvalidated, see D-013]` banner text — that is intentional,
+not a remaining violation.**
