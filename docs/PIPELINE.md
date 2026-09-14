@@ -426,6 +426,12 @@ ap mode. Graduation requires PROJECT_BRIEF.md complete, STYLE_GUIDE.md complete,
 
 ### Pipeline Validation
 All queue formats and data structures have been tested with sample data. The pipeline is ready for dry-run testing by Mistral (Scout role).
+**Dry-run rule: never write to the live queue files (`data/*-queue.md`)
+or `content/`.** A genuine dry-run against the real queue is real
+content-pipeline output regardless of what it's called, and that's
+blocked pre-graduation per D-013/D-016. Instead, write dry-run output
+to `data/sandbox/` (create it if it doesn't exist) — same file formats,
+clearly separated from anything the real pipeline will ever read.
 
 ---
 
