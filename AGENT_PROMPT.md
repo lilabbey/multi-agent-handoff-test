@@ -357,15 +357,18 @@ any rename/move commands for them — if one appears anywhere else in
 this repo (including historical handoff logs), it is stale and must
 not be executed.
 
-| Unique Name | Directory        | Scheduled Slot        |
-|-------------|------------------|------------------------|
-| Abbey       | agents/Abbey/    | Manual, morning kickoff |
-| Orion       | agents/Orion/    | 9-10am                 |
-| Aurora      | agents/Aurora/   | 10-11am                |
-| Nova        | agents/Nova/     | 11am-12pm              |
-| Aegis       | agents/Aegis/    | 12-1pm                 |
-| Mistral     | agents/Mistral/  | 1-2pm                  |
-| Vibe        | agents/Vibe/     | 2-3pm                  |
+| Unique Name | Directory        |
+|-------------|------------------|
+| Abbey       | agents/Abbey/    |
+| Orion       | agents/Orion/    |
+| Aurora      | agents/Aurora/   |
+| Nova        | agents/Nova/     |
+| Aegis       | agents/Aegis/    |
+| Mistral     | agents/Mistral/  |
+| Vibe        | agents/Vibe/     |
+
+Current schedule times live in `comms/schedule.md` only — never
+duplicated here, so there's nothing in this file that can go stale.
 
 The roster table above is the complete, current list of valid agent
 identities. There are no other legacy directories to account for. If
