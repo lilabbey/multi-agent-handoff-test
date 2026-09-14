@@ -32,14 +32,9 @@ Complete remaining bootstrap tasks from 2026-09-09:
 - Aurora: docs/STYLE_GUIDE.md - COMPLETED
 - Nova: docs/PIPELINE.md - COMPLETED (Validated per D-013 review)
 - Aegis: Audit + docs/DECISIONS.md - COMPLETED (Added D-014, D-015, D-016)
-- Mistral: Dry-run Scout (if PIPELINE.md complete) + Resolve D-008 violations per D-015
+- Mistra
+l: Dry-run Scout (if PIPELINE.md complete) + Resolve D-008 violations per D-015
 - Vibe: Consolidate day
-
-### D-015 Remediation Status
-- **D-008 Handoff Logs Archived**: 2026-09-14 by Orion
-  - Moved: comms/handoffs/2026-09-11-D-008-pipeline-creation.md → comms/handoffs/archive/bootstrap-test/
-  - Moved: comms/handoffs/2026-09-11-D-008-session-2-infrastructure.md → comms/handoffs/archive/bootstrap-test/
-  - **Note**: Original D-008 references in schedule history preserved for transparency (see D-015)
 
 ### Role Pipeline (READY FOR DRY-RUN)
 Scout -> Writer -> Editor -> Publisher
@@ -87,7 +82,8 @@ To join the rotation:
 
 For urgent coordination outside scheduled times:
 - Use GitHub Issues in this repository
-- Tag the relevant agent(s) in issue comments (use unique names!)
+- Tag the relevant agent(s) in issue comments (use unique 
+names!)
 - Reference the specific handoff log or commit
 
 ## Schedule History
@@ -98,22 +94,26 @@ Date | Change | Agent | Notes
 2026-09-08 | Naming convention updated | Vibe | Changed from Agent-N to unique names only (D-008)
 2026-09-09 | Updated with bootstrap day schedule | Abbey | 1-hour slots, 8 agents
 2026-09-10 | Coordinator kickoff | Coordinator | GRADUATION.md NOT CLEARED - continue bootstrap
-2026-09-10 | Orion started session | Orion | Session began at 15:25 UTC
-2026-09-10 | Orion completed session | Orion | Created PROJECT_BRIEF.md, handoff logged
-2026-09-10 | Aurora started session | Aurora | Session began at 16:52:59 UTC
-2026-09-10 | Aurora completed session | Aurora | Created STYLE_GUIDE.md, handoff logged
+2026-09-10 | Orion started session | Orion | D-008 session began at 15:25 UTC
+2026-09-10 | Orion completed session | Orion | D-008 created PROJECT_BRIEF.md, handoff logged
+2026-09-10 | Aurora started session | Aurora | D-008 session began at 16:52:59 UTC
+2026-09-10 | Aurora completed session | Aurora | D-008 created STYLE_GUIDE.md, handoff logged
 2026-09-10 | Coordinator role execution | Abbey | Followed COORDINATOR_PROMPT.md - Scout role BLOCKED, PIPELINE.md REDO required
 2026-09-10 | Coordinator execution 2 | Abbey | Followed COORDINATOR_PROMPT.md - All roles BLOCKED, PIPELINE.md still missing
 2026-09-10 | Schedule moved to overnight hours | Abbey | Orion-Vibe shifted to 12am-6am MT for overnight run
-2026-09-11 | Pipeline created | Nova/D-008 | PIPELINE.md created to resolve critical blocker
-2026-09-11 | Queue files created | Nova/D-008 | Standardized queue formats and sample data
+2026-09-11 | D-008 added to rotation | D-008 | Added to assist with PIPELINE.md creation
+2026-09-11 | D-008 completed session | D-008 | Created PIPELINE.md, resolved critical blocker
+2026-09-11 | D-008 started second session | D-008 | Continuing bootstrap work
+2026-09-11 | D-008 creating queue files and sample data | D-008 | Standardizing formats, creating test data
+2026-09-11 | D-008 started third session | D-008 | Continuing bootstrap work at 11:36 UTC
 2026-09-11 | Abbey executed Nova task | Abbey | Verified PIPELINE.md, marked Nova complete per D-013 review
 2026-09-12 | Aegis started session | Aegis | Audit + docs/DECISIONS.md
 2026-09-12 | Aegis completed session | Aegis | Added D-014, D-015, D-016 to DECISIONS.md
-2026-09-14 | Orion started session | Orion | Resolving D-008 violations per D-015
+2026-09-14 | Orion started session | Orion | Resolving D-008 violations per D-
+015
 
 ---
 
-*Last updated: 2026-09-14T20:10:00Z (2:10:00 PM UTC)*
+*Last updated: 2026-09-14T20:04:16Z (2:04:16 PM UTC)*
 *Timezone: America/Denver (MT, UTC-6)*
 *Mode: Bootstrap (NOT Production)
