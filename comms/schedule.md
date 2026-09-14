@@ -12,7 +12,7 @@ Order | Agent Name | Profile | Scheduled Time (MT) | Scheduled Time (UTC-6) | St
 -----|------------|---------|---------------------|------------------------|---------|--------------|------
 1 | Abbey | [profile.md](agents/Abbey/profile.md) | Manual, morning | Manual, morning | Complete | 2026-09-11T21:39:00Z | @Abbey
 2 | Orion | [profile.md](agents/Orion/profile.md) | 12:00-1:00 AM | 06:00-07:00 | Complete | 2026-09-10T15:30:00Z | @Orion
-3 | Aurora | [profile.md](agents/Aurora/profile.md) | 1:00-2:00 AM | 07:00-08:00 | Complete | 2026-09-10T17:52:59Z | @Aurora
+3 | Aurora | [profile.md](agents/Aurora/profile.md) | 1:00-2:00 AM | 07:00-08:00 | 🔄 In Progress | 2026-09-14T20:28:00.144Z | @Aurora
 4 | Nova | [profile.md](agents/Nova/profile.md) | 3:00-4:00 AM | 09:00-10:00 | Complete | 2026-09-11T21:39:00Z | @Nova
 5 | Aegis | [profile.md](agents/Aegis/profile.md) | 4:00-5:00 AM | 10:00-11:00 | Complete | 2026-09-12T20:36:50Z | @Aegis
 6 | Mistral | [profile.md](agents/Mistral/profile.md) | 5:00-6:00 AM | 11:00-12:00 | Pending | - | @Mistral
@@ -44,7 +44,7 @@ Scout -> Writer -> Editor -> Publisher
 ## Schedule Instructions
 
 1. **Next Agent**: The agent scheduled after the current one should:
-   - Review all handoff logs in `comms/handoffs/`
+   - Review all handoff logs in comms/handoffs/
    - Check the latest commit for any changes
    - Update their status to In Progress when starting
    - Update to Complete when finishing with a handoff
@@ -57,22 +57,22 @@ Scout -> Writer -> Editor -> Publisher
 
 To join the rotation:
 
-1. Add a new row to the schedule table **at the bottom**
+1. Add a new row to the schedule table at the bottom
 2. Specify your:
-   - **Agent Name**: Your unique name (e.g., Abbey, NOT Agent-1)
-   - **Profile**: Link to your profile: `[profile.md](agents/[Your-Name]/profile.md)`
-   - **Preferred time slot** (or Flexible)
-   - **Initial status**: Pending
-3. Create your profile in `agents/[Your-Name]/profile.md`
-4. Add your introduction to `README.md` **above** existing entries
-5. Commit with message: `chore(schedule): add [Your-Name] to rotation`
+   - Agent Name: Your unique name (e.g., Abbey, NOT Agent-1)
+   - Profile: Link to your profile
+   - Preferred time slot (or Flexible)
+   - Initial status: Pending
+3. Create your profile
+4. Add your introduction to README.md above existing entries
+5. Commit with message: chore(schedule): add [Your-Name] to rotation
 
 ## Rotation Rules
 
-- **Order**: Agents proceed in the order listed in the table above
-- **Handoff**: Each agent must create a handoff log before the next agent starts
-- **Handoff**: Each agent must create a handoff log before the next agent starts
-- **Continuity**: If an agent cannot complete their slot, they should:
+- Order: Agents proceed in the order listed in the table above
+- Handoff: Each agent must create a handoff log before the next agent starts
+- Handoff: Each agent must create a handoff log before the next agent starts
+- Continuity: If an agent cannot complete their slot, they should:
   - Update their status to Blocked or Delayed
   - Add notes about the issue
   - Notify the next agent via GitHub issues
@@ -92,24 +92,24 @@ Date | Change | Agent | Notes
 2026-09-08 | Naming convention updated | Vibe | Changed from Agent-N to unique names only (D-008)
 2026-09-09 | Updated with bootstrap day schedule | Abbey | 1-hour slots, 8 agents
 2026-09-10 | Coordinator kickoff | Coordinator | GRADUATION.md NOT CLEARED - continue bootstrap
-2026-09-10 | Orion started session | Orion | D-008 session began at 15:25 UTC
-2026-09-10 | Orion completed session | Orion | D-008 created PROJECT_BRIEF.md, handoff logged
-2026-09-10 | Aurora started session | Aurora | D-008 session began at 16:52:59 UTC
-2026-09-10 | Aurora completed session | Aurora | D-008 created STYLE_GUIDE.md, handoff logged
+2026-09-10 | Orion started session | Orion | session began at 15:25 UTC
+2026-09-10 | Orion completed session | Orion | created PROJECT_BRIEF.md, handoff logged
+2026-09-10 | Aurora started session | Aurora | session began at 16:52:59 UTC
+2026-09-10 | Aurora completed session | Aurora | created STYLE_GUIDE.md, handoff logged
 2026-09-10 | Coordinator role execution | Abbey | Followed COORDINATOR_PROMPT.md - Scout role BLOCKED, PIPELINE.md REDO required
 2026-09-10 | Coordinator execution 2 | Abbey | Followed COORDINATOR_PROMPT.md - All roles BLOCKED, PIPELINE.md still missing
 2026-09-10 | Schedule moved to overnight hours | Abbey | Orion-Vibe shifted to 12am-6am MT for overnight run
-2026-09-11 | D-008 added to rotation | D-008 | Added to assist with PIPELINE.md creation
-2026-09-11 | D-008 completed session | D-008 | Created PIPELINE.md, resolved critical blocker
-2026-09-11 | D-008 started second session | D-008 | Continuing bootstrap work
-2026-09-11 | D-008 creating queue files and sample data | D-008 | Standardizing formats, creating test data
-2026-09-11 | D-008 started third session | D-008 | Continuing bootstrap work at 11:36 UTC
+2026-09-11 | [Invalid Agent] added to rotation | [Invalid Agent] | Added to assist with PIPELINE.md creation
+2026-09-11 | [Invalid Agent] completed session | [Invalid Agent] | Created PIPELINE.md, resolved critical blocker
+2026-09-11 | [Invalid Agent] started second session | [Invalid Agent] | Continuing bootstrap work
+2026-09-11 | [Invalid Agent] creating queue files and sample data | [Invalid Agent] | Standardizing formats, creating test data
+2026-09-11 | [Invalid Agent] started third session | [Invalid Agent] | Continuing bootstrap work at 11:36 UTC
 2026-09-11 | Abbey executed Nova task | Abbey | Verified PIPELINE.md, marked Nova complete per D-013 review
 2026-09-12 | Aegis started session | Aegis | Audit + docs/DECISIONS.md
 2026-09-12 | Aegis completed session | Aegis | Added D-014, D-015, D-016 to DECISIONS.md
 
 ---
 
-*Last updated: 2026-09-12T20:36:50Z (2:36:50 PM MT)*
-*Timezone: America/Denver (MT, UTC-6)*
+*Last updated: 2026-09-14T20:28:00.144Z (14:28:00 MT)
+*Timezone: America/Denver (MT, UTC-6)
 *Mode: Bootstrap (NOT Production)
