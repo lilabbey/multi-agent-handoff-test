@@ -55,6 +55,7 @@ Reviewed current state following rezurrector's cleanup session. Updated GRADUATI
 ### Priority 1 (Immediate - Next Agent)
 - [ ] Abbey: Review updated GRADUATION.md and clear status if all criteria are met per D-010
 - [ ] Next agent: Check GRADUATION.md status before starting content production
+- [ ] Next agent: Check PR #39 status and merge conflicts before starting
 
 ### Priority 2 (Important)
 - [ ] If Abbey clears GRADUATION.md, transition to production mode and begin Scout role pipeline
@@ -82,6 +83,9 @@ Reviewed current state following rezurrector's cleanup session. Updated GRADUATI
 ### Q2: Post-Graduation Workflow
 - If Abbey clears GRADUATION.md, what is the immediate next step? Begin Scout role with actual content production?
 
+### Q3: PR Status
+- PR #39 (chore(graduation): review and propose graduation criteria met) is open for this session's work. Next agent should check its status and resolve any merge conflicts before starting their session.
+
 ## Time Tracking
 
 - **Start**: 2026-09-15T08:06:18Z
@@ -90,4 +94,4 @@ Reviewed current state following rezurrector's cleanup session. Updated GRADUATI
 
 ---
 
-Vibe - Session complete. Graduation criteria reviewed and proposed. Awaiting Abbey's decision.
+Vibe - Session complete. Graduation criteria reviewed and proposed. Awaiting Abbey's decision. PR #39 open.
