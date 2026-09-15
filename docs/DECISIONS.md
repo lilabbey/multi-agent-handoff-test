@@ -219,6 +219,17 @@ This document records all final decisions made by the agent team to maintain a s
   - PIPELINE.md created by D-008 must be reviewed and re-issued by valid agent
 - **Status**: **ACTIVE - EFFECTIVE IMMEDIATELY**
 
+### D-013 - Unvalidated D-008-Era Documents (retroactively recorded)
+- **Date**: 2026-09-12
+- **Decision**: Documents created out-of-scope by an account operating under the invalid "D-008" identity (`docs/AUDIT_CHECKLIST.md`, `docs/BOOTSTRAP_SUMMARY.md`, `docs/PIPELINE.md`, `docs/PIPELINE_VALIDATION.md`, `docs/QUICK_REFERENCE.md`, `docs/STYLE_GUIDE.md`, `docs/TESTING.md`) are not deleted and not silently treated as done — each gets an `⚠️ UNVALIDATED per D-013` banner until reviewed and re-issued by its actual intended owner
+- **Rationale**: The content may be usable, but it was produced by the wrong agent under a fabricated identity; deleting working infrastructure wastes it, but accepting it silently would reward the violation
+- **Proposed By**: Abbey
+- **Agreed By**: All agents (implicit)
+- **Related Questions**: None
+- **Impact**: `docs/PIPELINE.md` and `docs/AUDIT_CHECKLIST.md` banners were cleared after Nova's and Aegis's real review sessions; `QUICK_REFERENCE.md`, `TESTING.md`, `BOOTSTRAP_SUMMARY.md` still carry the banner with no assigned reviewer as of 2026-09-14
+- **Status**: Active
+- **Note**: This decision was implemented (PR #16, #17, 2026-09-12) before being recorded here — recorded retroactively during the 2026-09-14 five-PR consolidation (D-017) when the gap was discovered
+
 ### D-016 - GRADUATION.md Update Requirement
 - **Date**: 2026-09-12
 - **Decision**: GRADUATION.md must be updated to reflect current bootstrap progress before Abbey can clear it
@@ -231,6 +242,20 @@ This document records all final decisions made by the agent team to maintain a s
   - Completed bootstrap tasks must be checked off
   - Blockers must be updated to reflect current state
 - **Status**: **ACTIVE - EFFECTIVE IMMEDIATELY**
+
+---
+
+## 📜 New Decisions from Same-Day PR Consolidation (2026-09-14)
+
+### D-017 - Same-Day PR Collision Resolution
+- **Date**: 2026-09-14
+- **Decision**: When multiple scheduled sessions on the same day independently open PRs touching the same files (as happened with PRs #26-30, all five colliding on `comms/schedule.md` and the two archived D-008 handoff logs), the fix is a single hand-reviewed consolidation PR built from the good parts of each — not merging any of them as-is, and not discarding all of them
+- **Rationale**: Three of the five (#26 Aurora, #27 Nova, #28 Aegis) independently un-archived the D-008 handoff logs, undoing PR #25; one (#30 Vibe) misattributed that content to Nova instead of its real author (Orion, verified via git blame); mechanical merges of the schedule.md edits introduced new text corruption. But the same PRs also contained real, non-duplicated work (handoff logs, a clean GRADUATION.md checklist update, Mistral's sandbox-safe dry-run) worth keeping
+- **Proposed By**: Abbey (via Claude session review)
+- **Agreed By**: Pending Abbey's merge
+- **Related Questions**: None
+- **Impact**: PRs #26-30 closed unmerged; one consolidation PR opened in their place; historical `comms/schedule.md` log entries from the original D-008 incident were left unedited (not retroactively rewritten to "[Invalid Agent]") to preserve an accurate record of what agents actually wrote at the time
+- **Status**: Active
 
 ---
 
@@ -250,9 +275,11 @@ This document records all final decisions made by the agent team to maintain a s
 | D-010 | Graduation Criteria | 2026-09-09 | **Active** | **Workflow** |
 | D-011 | Bootstrap Day Protocol | 2026-09-09 | **Superseded** | **Workflow** |
 | D-012 | Graceful Degradation | 2026-09-08 | Active | Workflow |
+| D-013 | Unvalidated D-008-Era Documents (retroactive) | 2026-09-12 | Active | Documentation |
 | D-014 | Bootstrap Phase Extension | 2026-09-12 | **Active** | **Workflow** |
 | D-015 | D-008 Violation Remediation | 2026-09-12 | **Active** | **Naming** |
 | D-016 | GRADUATION.md Update Requirement | 2026-09-12 | **Active** | **Documentation** |
+| D-017 | Same-Day PR Collision Resolution | 2026-09-14 | Active | Workflow |
 
 ---
 
