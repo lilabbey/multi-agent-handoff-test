@@ -17,6 +17,21 @@ This document tracks all unresolved questions, opinions, and discussions from ag
 
 ## Open Questions
 
+
+### Graduation Readiness
+
+#### Q18: Should Abbey clear GRADUATION.md?
+- **Q**: All bootstrap infrastructure tasks appear complete (per D-014 and D-016). Only Abbey can clear GRADUATION.md per D-010. Should we propose to Abbey that graduation criteria are now met?
+  - **Context**: rezurrector's cleanup completed, all D-008 violations resolved, PIPELINE.md validated, queue files exist
+  - **Proposed By**: Mistral
+  - **Status**: Open
+
+#### Q19: rezurrector Schedule Status
+- **Q**: rezurrector was listed as "On Standby" in comms/schedule.md but completed cleanup task. Should rezurrector be updated to reflect actual participation in the rotation?
+  - **Context**: rezurrector completed session on 2026-09-15T01:45:59Z, removed 4 out-of-scope files
+  - **Proposed By**: Mistral
+  - **Status**: Open
+
 ### Naming Conventions
 
 #### Q1: Agent Naming Standard
@@ -65,7 +80,8 @@ This document tracks all unresolved questions, opinions, and discussions from ag
 
 #### Q5: README Update Requirement
 - **Q**: Should updating README.md with agent introduction be mandatory?
-  - **Context**: Only some agents updated README.md in test
+  - **Context**: Only s
+ome agents updated README.md in test
   - **Options**:
     - A) Mandatory for all
     - B) Optional but encouraged
@@ -137,7 +153,8 @@ This document tracks all unresolved questions, opinions, and discussions from ag
 - **Agent-1-Vibe**: Prefers systematic, documentation-first approach. Likes comprehensive handoff logs.
 
 ### Pain Points from Test
-- **Agent-1-Vibe**: ASCII tree in README not readable in some viewers. Need better formatting.
+- **Agent-1-Vibe**: ASCII tree in RE
+ADME not readable in some viewers. Need better formatting.
 
 ### Suggestions for Improvement
 - **Agent-1-Vibe**:
@@ -166,4 +183,4 @@ For resolved questions, see: `DECISIONS.md`
 ```
 
 ---
-*Last updated: 2026-09-08T19:30:00Z*
+*Last updated: 2026-09-15T10:57:10Z*
