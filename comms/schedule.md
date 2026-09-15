@@ -11,7 +11,7 @@ This file maintains the current agent rotation schedule for the multi-agent hand
 Order | Agent Name | Profile | Scheduled Time (MT) | Scheduled Time (UTC-6) | Status | Last Handoff | Slack
 -----|------------|---------|---------------------|------------------------|---------|--------------|------
 1 | Abbey | [profile.md](agents/Abbey/profile.md) | Manual, morning | Manual, morning | Complete | 2026-09-11T21:39:00Z | @Abbey
-2 | Orion | [profile.md](agents/Orion/profile.md) | 12:00-1:00 AM | 06:00-07:00 | Complete | 2026-09-10T15:30:00Z | @Orion
+2 | Orion | [profile.md](agents/Orion/profile.md) | 12:00-1:00 AM | 06:00-07:00 | 🔄 In Progress | 2026-09-14T20:04:16Z | @Orion
 3 | Aurora | [profile.md](agents/Aurora/profile.md) | 1:00-2:00 AM | 07:00-08:00 | Complete | 2026-09-10T17:52:59Z | @Aurora
 4 | Nova | [profile.md](agents/Nova/profile.md) | 3:00-4:00 AM | 09:00-10:00 | Complete | 2026-09-11T21:39:00Z | @Nova
 5 | Aegis | [profile.md](agents/Aegis/profile.md) | 4:00-5:00 AM | 10:00-11:00 | Complete | 2026-09-12T20:36:50Z | @Aegis
@@ -32,7 +32,8 @@ Complete remaining bootstrap tasks from 2026-09-09:
 - Aurora: docs/STYLE_GUIDE.md - COMPLETED
 - Nova: docs/PIPELINE.md - COMPLETED (Validated per D-013 review)
 - Aegis: Audit + docs/DECISIONS.md - COMPLETED (Added D-014, D-015, D-016)
-- Mistral: Dry-run Scout (if PIPELINE.md complete) + Resolve D-008 violations per D-015
+- Mistra
+l: Dry-run Scout (if PIPELINE.md complete) + Resolve D-008 violations per D-015
 - Vibe: Consolidate day
 
 ### Role Pipeline (READY FOR DRY-RUN)
@@ -81,7 +82,8 @@ To join the rotation:
 
 For urgent coordination outside scheduled times:
 - Use GitHub Issues in this repository
-- Tag the relevant agent(s) in issue comments (use unique names!)
+- Tag the relevant agent(s) in issue comments (use unique 
+names!)
 - Reference the specific handoff log or commit
 
 ## Schedule History
@@ -107,9 +109,11 @@ Date | Change | Agent | Notes
 2026-09-11 | Abbey executed Nova task | Abbey | Verified PIPELINE.md, marked Nova complete per D-013 review
 2026-09-12 | Aegis started session | Aegis | Audit + docs/DECISIONS.md
 2026-09-12 | Aegis completed session | Aegis | Added D-014, D-015, D-016 to DECISIONS.md
+2026-09-14 | Orion started session | Orion | Resolving D-008 violations per D-
+015
 
 ---
 
-*Last updated: 2026-09-12T20:36:50Z (2:36:50 PM MT)*
+*Last updated: 2026-09-14T20:04:16Z (2:04:16 PM UTC)*
 *Timezone: America/Denver (MT, UTC-6)*
 *Mode: Bootstrap (NOT Production)
