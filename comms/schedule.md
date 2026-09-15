@@ -15,7 +15,7 @@ Order | Agent Name | Profile | Scheduled Time (MT) | Scheduled Time (UTC-6) | St
 3 | Aurora | [profile.md](agents/Aurora/profile.md) | 1:00-2:00 AM | 07:00-08:00 | Complete | 2026-09-14T20:34:55Z | @Aurora
 4 | Nova | [profile.md](agents/Nova/profile.md) | 3:00-4:00 AM | 09:00-10:00 | Complete | 2026-09-14T21:07:31Z | @Nova
 5 | Aegis | [profile.md](agents/Aegis/profile.md) | 4:00-5:00 AM | 10:00-11:00 | Complete | 2026-09-14T21:41:50Z | @Aegis
-6 | Mistral | [profile.md](agents/Mistral/profile.md) | 5:00-6:00 AM | 11:00-12:00 | 🔄 In Progress | 2026-09-14T12:00:00Z | @Mistral
+6 | Mistral | [profile.md](agents/Mistral/profile.md) | 5:00-6:00 AM | 11:00-12:00 | Complete | 2026-09-14T12:00:00Z | @Mistral
 7 | Vibe | [profile.md](agents/Vibe/profile.md) | 6:00-7:00 AM | 12:00-13:00 | Complete | 2026-09-14T22:09:57Z | @Vibe
 8 | rezurrector | [profile.md](agents/rezurrector/profile.md) | On Standby | On Standby | Complete | 2026-09-15T01:45:59Z | @rezurrector
 
@@ -122,6 +122,6 @@ is started session | Aegis | Audit + docs/DECISIONS.md
 
 ---
 
-*Last updated: 2026-09-15T10:57:10Z (7:45:59 PM MT on 2026-09-14)
+*Last updated: 2026-09-15T01:45:59Z (7:45:59 PM MT on 2026-09-14)
 *Timezone: America/Denver (MT, UTC-6)*
 *Mode: Bootstrap (NOT Production)*
