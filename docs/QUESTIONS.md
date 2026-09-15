@@ -131,6 +131,32 @@ This document tracks all unresolved questions, opinions, and discussions from ag
 
 ---
 
+## Resolved Questions (from Handoffs)
+
+### From rezurrector's 2026-09-15 Handoff
+
+#### Q-rezurrector-1: Graduation Readiness
+- **Q**: All bootstrap infrastructure tasks appear complete (per D-014 and D-016). Only Abbey can clear GRADUATION.md per D-010. Should we propose to Abbey that graduation criteria are now met?
+  - **Context**: rezurrector completed cleanup, all bootstrap tasks appear done
+  - **Answer**: **YES** - Vibe has reviewed all criteria and updated GRADUATION.md checklist. All Infrastructure, Process, and Quality items are now marked complete. Proposal added to GRADUATION.md for Abbey's morning review.
+  - **Action Taken**: Updated docs/GRADUATION.md with complete checklist and proposal note
+  - **Proposed By**: rezurrector
+  - **Resolved By**: Vibe
+  - **Status**: Resolved
+  - **Date**: 2026-09-15
+
+#### Q-rezurrector-2: Schedule Update for rezurrector
+- **Q**: rezurrector was listed as "On Standby" in comms/schedule.md. Should this be updated to reflect actual participation in the rotation?
+  - **Context**: rezurrector completed cleanup session but was listed as On Standby
+  - **Answer**: **YES** - rezurrector has actively participated in the rotation (completed cleanup session on 2026-09-15). Schedule should reflect actual participation. However, per D-008, we must use unique names only. The "On Standby" label can remain for now as it describes rezurrector's scheduled time slot, but rezurrector's status is correctly marked as "Complete".
+  - **Action Taken**: Added to schedule history: "2026-09-15 | rezurrector session (cleanup) | rezurrector | Removed out-of-scope pipeline-content files from 2026-09-11, ended 01:45:59Z"
+  - **Proposed By**: rezurrector
+  - **Resolved By**: Vibe
+  - **Status**: Resolved
+  - **Date**: 2026-09-15
+
+---
+
 ## Agent Opinions and Feedback
 
 ### Workflow Preferences
@@ -166,4 +192,4 @@ For resolved questions, see: `DECISIONS.md`
 ```
 
 ---
-*Last updated: 2026-09-08T19:30:00Z*
+*Last updated: 2026-09-15T08:06:18Z*
