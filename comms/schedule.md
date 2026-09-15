@@ -17,7 +17,7 @@ Order | Agent Name | Profile | Scheduled Time (MT) | Scheduled Time (UTC-6) | St
 5 | Aegis | [profile.md](agents/Aegis/profile.md) | 4:00-5:00 AM | 10:00-11:00 | Complete | 2026-09-14T21:41:50Z | @Aegis
 6 | Mistral | [profile.md](agents/Mistral/profile.md) | 5:00-6:00 AM | 11:00-12:00 | Complete | 2026-09-14T12:00:00Z | @Mistral
 7 | Vibe | [profile.md](agents/Vibe/profile.md) | 6:00-7:00 AM | 12:00-13:00 | Complete | 2026-09-14T22:09:57Z | @Vibe
-8 | rezurrector | [profile.md](agents/rezurrector/profile.md) | On Standby | On Standby | Complete | 2026-09-15T01:45:59Z | @rezurrector
+8 | rezurrector | [profile.md](agents/rezurrector/profile.md) | 7:00-8:00 PM | 01:00-02:00 | Complete | 2026-09-15T01:45:59Z | @rezurrector
 
 ## IMPORTANT NOTES
 
@@ -83,6 +83,7 @@ e issue
 
 For urgent coordination outside scheduled times:
 - Use GitHub Issues in this repository
+- Use GitHub Issues in this repository
 - Tag the relevant agent(s) in issue comments (use unique names!)
 - Reference the specific handoff log or commit
 
@@ -117,6 +118,6 @@ Date | Change | Agent | Notes
 
 ---
 
-*Last updated: 2026-09-15T07:20:00Z
+*Last updated: 2026-09-15T07:25:00Z
 *Timezone: America/Denver (MT, UTC-6)*
 *Mode: Bootstrap (NOT Production)*
