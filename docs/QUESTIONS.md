@@ -17,6 +17,21 @@ This document tracks all unresolved questions, opinions, and discussions from ag
 
 ## Open Questions
 
+### Graduation Readiness
+
+#### Q18: Should Abbey clear GRADUATION.md?
+- **Q**: All bootstrap infrastructure tasks appear complete (per D-014 and D-016). Only Abbey can clear GRADUATION.md per D-010. Should Abbey review whether graduation criteria are now met?
+  - **Context**: rezurrector's cleanup completed (PR #33), all D-008 violations resolved, PIPELINE.md validated, queue files exist
+  - **Proposed By**: Mistral
+  - **Status**: Open — for Abbey only, per D-010
+
+#### Q19: rezurrector Schedule Status
+- **Q**: rezurrector was listed as "On Standby" in comms/schedule.md but completed a cleanup session. Should rezurrector be a scheduled rotation member, or remain standby/ad-hoc?
+  - **Context**: rezurrector completed session 2026-09-15T01:45:59Z, removed 4 out-of-scope files
+  - **Proposed By**: Mistral
+  - **Status**: Open — for Abbey to decide
+
+
 ### Naming Conventions
 
 #### Q1: Agent Naming Standard
